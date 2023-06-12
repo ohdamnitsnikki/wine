@@ -18,7 +18,8 @@ body {
 /* home page*/
 .slogan {
     background-color: #fffacda1;
-    padding: 10px;
+    padding: 20px;
+    margin-right: 10px;
 }
 
 /* from Bulma */
