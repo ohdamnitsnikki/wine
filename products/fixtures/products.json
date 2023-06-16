@@ -763,7 +763,7 @@
          "name":"Asti N.V.",
          "description":"On the nose apple pear yeast bread a hint of floral. On the palate same flavor as aromas with some honey sweet but not overly sweet.",
          "price":14.99,
-         "category":[4,5,9],
+         "category":4,
          "rating":5.0,
          "image_url":"https://images.vivino.com/thumbs/lHnYLBLXQkynqxB1EGUWUA_pb_x600.png",
          "image":"asti.png"
@@ -777,7 +777,7 @@
          "name":"Asti N.V.",
          "description":"On the nose apple pear yeast bread a hint of floral. On the palate same flavor as aromas with some honey sweet but not overly sweet.",
          "price":14.99,
-         "category":[4,5,9],
+         "category":5,
          "rating":5.0,
          "image_url":"https://images.vivino.com/thumbs/lHnYLBLXQkynqxB1EGUWUA_pb_x600.png",
          "image":"asti.png"
@@ -791,7 +791,7 @@
          "name":"Asti N.V.",
          "description":"On the nose apple pear yeast bread a hint of floral. On the palate same flavor as aromas with some honey sweet but not overly sweet.",
          "price":14.99,
-         "category":[4,5,9],
+         "category":9,
          "rating":5.0,
          "image_url":"https://images.vivino.com/thumbs/lHnYLBLXQkynqxB1EGUWUA_pb_x600.png",
          "image":"asti.png"
