@@ -17,10 +17,10 @@
                 Region
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Italy</a>
-                <a href="" class="dropdown-item">France</a>
-                <a href="" class="dropdown-item">The United States</a>
-                <a href="" class="dropdown-item">All Regions</a>
+                <a href="{% url 'products' %}?category=italy" class="dropdown-item">Italy</a>
+                <a href="{% url 'products' %}?category=france" class="dropdown-item">France</a>
+                <a href="{% url 'products' %}?category=usa" class="dropdown-item">The United States</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Regions</a>
             </div>
         </li>
 
@@ -29,11 +29,11 @@
                 Colour
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Red Wine</a>
-                <a href="" class="dropdown-item">White Wine</a>
-                <a href="" class="dropdown-item">Rosé Wine</a>
-                <a href="" class="dropdown-item">Sparkling Wine</a>
-                <a href="" class="dropdown-item">All Colours</a>
+                <a href="{% url 'products' %}?category=red_wine" class="dropdown-item">Red Wine</a>
+                <a href="{% url 'products' %}?category=white_wine" class="dropdown-item">White Wine</a>
+                <a href="{% url 'products' %}?category=rose_whine" class="dropdown-item">Rosé Wine</a>
+                <a href="{% url 'products' %}?category=sparkling_wine" class="dropdown-item">Sparkling Wine</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Colours</a>
             </div>
         </li>
 
@@ -42,9 +42,9 @@
                 Pairings
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Red Meat</a>
-                <a href="" class="dropdown-item">White Fish</a>
-                <a href="" class="dropdown-item">All Pairings</a>
+                <a href="{% url 'products' %}?category=red_meat" class="dropdown-item">Red Meat</a>
+                <a href="{% url 'products' %}?category=white_fish" class="dropdown-item">White Fish</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Pairings</a>
             </div>
         </li>
     </ul>
