@@ -18,6 +18,30 @@ body {
     background-color: antiquewhite;
 }
 
+/* banner */
+.banner {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .banner h4 {
+    font-size: 24px;
+    color: #ffffff;
+    white-space: nowrap;
+    animation: rotateText 10s linear infinite;
+  }
+  
+  @keyframes rotateText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
 /* home page*/
 .slogan {
     background-color: #fffacda1;
