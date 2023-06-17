@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    
 }
 
 /* navbar */
@@ -43,6 +44,31 @@ body {
   }
 
 /* home page*/
+
+.background-img {
+    animation-duration: 5s;
+
+/*animate zoom effect while hovering*/
+
+animation-name: hero-zoom;
+animation-fill-mode: forwards;
+}
+
+
+
+/*Create zoom visibility*/
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+
+    }
+    to {
+        transform: scale(1.1);
+
+    }
+}
+
+
 .slogan {
     background-color: #fffacda1;
     padding: 20px;
