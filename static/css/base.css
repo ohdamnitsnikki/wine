@@ -73,8 +73,27 @@ body {
 
 .bg-black {
     background: #000 !important;
-}  
+} 
 
+/* products */
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.product {
+    padding-left:60px;
+}
+
+.img_size {
+    width:15vh;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
