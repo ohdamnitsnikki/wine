@@ -46,9 +46,9 @@ body {
 /* home page*/
 
 .background-img {
-    animation-duration: 5s;
+    animation-duration: 3s;
 
-/*animate zoom effect while hovering*/
+/*animate zoom effect while entering page*/
 
 animation-name: hero-zoom;
 animation-fill-mode: forwards;
@@ -144,7 +144,13 @@ animation-fill-mode: forwards;
 .img_size {
     width:15vh;
 }
-/* -------------------------------- Media Queries */
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+/* Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
