@@ -18,13 +18,13 @@
       "model":"products.product",
       "fields":{
          "sku":"pp5001340155",
-         "name":"Primitivo Salento Torcicoda",
-         "description":"Torcicoda is a wine produced by Tormaresca with Primitivo grapes coming from vines grown as sapling and spurred cordon at the Tenuta Maìme di S. Pietro Vernotico. The grapes were harvested just overdried during the first week of September. After crushing, maceration, managed with soft pumping over and delèstage, was continued for 15 days in stainless steel tanks. During this phase, the wines completed the alcoholic fermentation at a temperature not exceeding 26 ° C. After the vinification of the wine, the malolactic fermentation took place directly in French and Hungarian oak barrels, in which it was raised for about 10 months. A further period of 8 months of aging in bottle followed before being placed on the market. Characterized by an intense ruby ​​red color. It has fruity aromas of plum, blackberry and raspberry combined with the spicy ones of pepper, coffee and cocoa. On the palate it releases a soft, rich, pleasant and elegant flavor, of good intensity and persistence. Serve at a temperature of 18-20 ° C.",
+         "name":"Stilio Primitivo di Manduria",
+         "description":"Lovely nose of reduced dark fruits and raisins. Medium palette with great complexity and very well integrated tannins. Short finish with hints of Vanilla and oak.",
          "price":22.99,
          "category":5,
-         "rating":4,
-         "image_url":"https://images.vivino.com/thumbs/SzuXju7yTWi16dbwjMs0zQ_pb_x600.png",
-         "image":"primitivo_salento_torcicoda.png"
+         "rating":4.2,
+         "image_url":"https://images.vivino.com/thumbs/XvkoFpW1S3ergnaVlqqoTg_pb_x600.png",
+         "image":"stilio.png"
       }
    },
    {
@@ -32,13 +32,13 @@
       "model":"products.product",
       "fields":{
          "sku":"pp5001340155",
-         "name":"Primitivo Salento Torcicoda",
-         "description":"Torcicoda is a wine produced by Tormaresca with Primitivo grapes coming from vines grown as sapling and spurred cordon at the Tenuta Maìme di S. Pietro Vernotico. The grapes were harvested just overdried during the first week of September. After crushing, maceration, managed with soft pumping over and delèstage, was continued for 15 days in stainless steel tanks. During this phase, the wines completed the alcoholic fermentation at a temperature not exceeding 26 ° C. After the vinification of the wine, the malolactic fermentation took place directly in French and Hungarian oak barrels, in which it was raised for about 10 months. A further period of 8 months of aging in bottle followed before being placed on the market. Characterized by an intense ruby ​​red color. It has fruity aromas of plum, blackberry and raspberry combined with the spicy ones of pepper, coffee and cocoa. On the palate it releases a soft, rich, pleasant and elegant flavor, of good intensity and persistence. Serve at a temperature of 18-20 ° C.",
-         "price":22.99,
+         "name":"Li Filitti Riserva Primitivo di Manduria",
+         "description":"Very good Italian primitivo 🇮🇹 very rich fruity nose followed by a great palate with lots of Blackberry, oak, cherry and some Black pepper.",
+         "price":12.99,
          "category":8,
-         "rating":4,
-         "image_url":"https://images.vivino.com/thumbs/SzuXju7yTWi16dbwjMs0zQ_pb_x600.png",
-         "image":"primitivo_salento_torcicoda.png"
+         "rating":4.2,
+         "image_url":"https://images.vivino.com/thumbs/t1uOVnyzS0K0yFPbBnBfTg_pb_x600.png",
+         "image":"filitti.png"
       }
    },
    {
@@ -60,13 +60,13 @@
       "model":"products.product",
       "fields":{
          "sku":"pp5001600425",
-         "name":"Primitivo di Manduria",
+         "name":"1 Uno Primitivo di Manduria Riserva",
          "description":"This primitivo is a fruit driven sweeter primitivo with notes of darker berrys like cherry, raisin and blackberry. It's earthy and rustic",
          "price":19.99,
          "category":5,
          "rating":4.1,
-         "image_url":"https://images.vivino.com/thumbs/1mRIannXRIqzf7FwQCmaJg_pb_x600.png",
-         "image":"primitivo_di_manduria.png"
+         "image_url":"https://images.vivino.com/thumbs/MSS3le-ITHWzMJb_dR_Z-A_pb_x600.png",
+         "image":"uno.png"
       }
    },
    {
@@ -74,13 +74,13 @@
       "model":"products.product",
       "fields":{
          "sku":"pp5001600425",
-         "name":"Primitivo di Manduria",
+         "name":"Appassito Primitivo",
          "description":"This primitivo is a fruit driven sweeter primitivo with notes of darker berrys like cherry, raisin and blackberry. It's earthy and rustic",
          "price":19.99,
          "category":8,
          "rating":4.1,
          "image_url":"https://images.vivino.com/thumbs/1mRIannXRIqzf7FwQCmaJg_pb_x600.png",
-         "image":"primitivo_di_manduria.png"
+         "image":"apassito.png"
       }
    },
    {
@@ -104,11 +104,11 @@
          "sku":"pp5001730010",
          "name":"Amarone della Valpolicella Classico",
          "description":"Amarone is a rich, expressive red wine from the Veneto region of northeastern Italy. Its full name is Amarone della Valpolicella, and it's produced from a blend of grapes including Corvina, Corvinone, Rondinella, and (less commonly these days) Molinara.",
-         "price":39.99,
+         "price":35.99,
          "category":5,
-         "rating":4.4,
-         "image_url":"https://images.vivino.com/thumbs/qukHG6_iRMW3y8uGAld-xA_pb_x600.png",
-         "image":"amarone.png"
+         "rating":4.3,
+         "image_url":"https://images.vivino.com/thumbs/oLMpuOxHRcOprS4rQc6gaQ_pb_x600.png",
+         "image":"della.png"
       }
    },
    {
@@ -120,9 +120,9 @@
          "description":"Amarone is a rich, expressive red wine from the Veneto region of northeastern Italy. Its full name is Amarone della Valpolicella, and it's produced from a blend of grapes including Corvina, Corvinone, Rondinella, and (less commonly these days) Molinara.",
          "price":39.99,
          "category":8,
-         "rating":4.4,
-         "image_url":"https://images.vivino.com/thumbs/qukHG6_iRMW3y8uGAld-xA_pb_x600.png",
-         "image":"amarone.png"
+         "rating":4.3,
+         "image_url":"https://images.vivino.com/thumbs/Z8v3x-kOQEmY4qO_Az96_Q_pb_x600.png",
+         "image":"valpociella.png"
       }
    },
    {
