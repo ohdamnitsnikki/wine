@@ -85,6 +85,11 @@ animation-fill-mode: forwards;
     width: 1.5rem;
 }
 
+.logo {
+    font-size: 5vh;
+    position: absolute;
+}
+
 .logo-font {
     text-transform: uppercase;
 }
