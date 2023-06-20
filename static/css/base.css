@@ -12,7 +12,9 @@ body {
 }
 
 /* navbar */
-
+.dropdown-border {
+    border-bottom: 2px outset #5b555624;
+}
 
 /* header */
 .header {
