@@ -20,12 +20,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-o8l8u+z&@=(g(=$gnc@%7$k(7&z6#ki_)=rt$^f4=_px)46d^+'
+SECRET_KEY = (
+    'django-insecure-o8l8u+z&@=(g(=$gnc@%7$k(7&z6#ki_)=rt$^f4=_px)46d^+'
+)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ohdamnitsnikki-wine-tg6nppvxgpf.ws-eu100.gitpod.io', 'localhost']
+ALLOWED_HOSTS = [
+    '8000-ohdamnitsnikki-wine-tg6nppvxgpf.ws-eu100.gitpod.io',
+    'localhost'
+]
 
 
 # Application definition
@@ -44,6 +49,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -130,7 +136,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': ('django.contrib.auth.password_validation.NumericPasswordValidator'),
     },
 ]
 
