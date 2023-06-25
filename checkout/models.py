@@ -53,8 +53,8 @@ class Order(models.Model):
     def __str__(self):
         return self.order_number
 
-    
-    class OrderLineItem(models.Model):
+
+class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
