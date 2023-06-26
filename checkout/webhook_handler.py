@@ -38,7 +38,7 @@ class StripeWH_Handler:
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
-
+        # While loop to make handler look for order longer
         order_exists = False
         attempt = 1
         while attempt <= 5:
