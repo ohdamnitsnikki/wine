@@ -101,35 +101,36 @@ animation-fill-mode: forwards;
     background: black;
     color: white;
     min-width: 260px;
-    position: relative; /* Add position:relative */
+    border: none; 
+    position: relative; 
   }
   
   .shop-now-button::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 3px dotted #ffffff;
-    animation: border-animation 2s infinite linear; /* Apply the animation */
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    box-shadow: 0 0 0 3px white; 
+    animation: border-animation 2s infinite linear; 
   }
   
   @keyframes border-animation {
     0% {
-      transform: translate(0, 0);
+      box-shadow: 0 0 0 3px white;
     }
     25% {
-      transform: translate(100%, 0);
+      box-shadow: 3px 0 0 3px white;
     }
     50% {
-      transform: translate(100%, 100%);
+      box-shadow: 3px 3px 0 3px white;
     }
     75% {
-      transform: translate(0, 100%);
+      box-shadow: 0 3px 0 3px white;
     }
     100% {
-      transform: translate(0, 0);
+      box-shadow: 0 0 0 3px white;
     }
   }
 
