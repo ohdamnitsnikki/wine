@@ -28,7 +28,7 @@ SECRET_KEY = (
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-ohdamnitsnikki-wine-tg6nppvxgpf.ws-eu100.gitpod.io',
+    '8000-ohdamnitsnikki-wine-tg6nppvxgpf.ws-eu101.gitpod.io',
     'localhost'
 ]
 
