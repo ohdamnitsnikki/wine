@@ -217,6 +217,10 @@ a.category-badge > span.badge:hover {
     padding-left: 60px;
 }
 
+.img-fluid {
+    height: 46vh;
+}
+
 /* Product Form */
 
 .btn-file {
