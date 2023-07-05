@@ -193,28 +193,60 @@ Additional testing was taken by friends and family on a variety of devices and s
 Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | `Navbar` |
-| Site logo | Redirects to the home page | Click logo |  Redirects to home page | Pass |
 | Site Name | Redirects to home page | Click site name | Redirects to home page | Pass |
-| Home Link | Redirects to home page | Click home link | Redirects to home page | Pass |
-| Login Link (user not logged in) | Redirect to Login page | Click log in link | Redirected to log in page | Pass |
-| Sign up Link (user not logged in)  | Redirect to Sign up page | Click sign up link | Redirected to sign up page | Pass |
-| View all posts link | Redirects the user to the all threads page | Click view all posts link | Redirected to all posts page | Pass |
-| Admin View | Redirects to the admin view page | Click admin view link | Redirected to admin view page | Pass |
-| Logout link (user logged in) | User will be logged out | Click log out link| Redirected to home page - login link available | Pass |
+| My Account | Show dropdown menu for login and register | Click my account | Show dropdown menu for login and register | Pass |
+| My Account (as a logged in user) | Show dropdown menu for my profile and logout | Click my account | Show dropdown menu for my profile and logout | Pass |
+| My Account (as a logged in admin) | Show dropdown menu for login,register and product management | Click my account | Show dropdown menu for login,register and product management | Pass |
+| Shopping Bag | Redirects to bag page | Click site name | Redirects to bag page | Pass |
+| Searchbar | Give option to write in the textfield | Click searchbar | Give option to write in the textfield | Pass |
+| All Products | Show dropdown menu for all products | Click all producst | Show dropdown menu for all products | Pass |
+| Region | Show dropdown menu for region | Click region | Show dropdown menu for region | Pass |
+| Colour | Show dropdown menu for colour | Click colour | Show dropdown menu for colour | Pass |
+| Pairings | Show dropdown menu for pairings | Click pairings | Show dropdown menu for pairings | Pass |
 | `Home Page` |
-| View threads button | Redirects to the threads page | Click button | Redirected to the thread | Pass |
-| Start a new thread button | Modal popup to create new thread | Click button | New thread modal popped up | Pass |
+| Shop now button | Redirects to all product page | Click button | Redirects to all product page | Pass |
 | `Login Page` |
-| Form - link to sign up page | Redirects user to sign in page | Click link | Redirected to sign up page | Pass |
-| Form - Submission with no information | User prompted to fill in information | clicked submit button with no fields filled out | Form highlighted first empty field | Pass |
-| `Signup Page` |
-| Form - Submission with no information | User prompted to fill in information | clicked submit button with no fields filled out | Form highlighted first empty field | Pass |
-| `New Post Page` |
-| --- | --- | --- | --- | --- |
-| `New Thread Page` |
-| --- | --- | --- | --- | --- |
-| `Threads Page` |
-| --- | --- | --- | --- | --- |
+| Sign Up link | Redirects user to sign up page | Click link | Redirected to sign up page | Pass |
+| Input field for username | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for password | Activates text area | Click textfield | Activates text area | Pass |
+| Radio button for remeber me | Fills in button | Click radio button | Fills in button | Pass |
+| Home button | Redirects user to home page | Click link | Redirected to sign home page | Pass |
+| Sign in button | Redirects user to home page | Click link | Redirected to home page | Pass |
+| Forgot password link | Redirects user to reset password page | Click link | Redirects user to reset password page | Pass |
+| `Register Page` |
+| Sign in link | Redirects user to sign in page | Click link | Redirects user to sign in page | Pass |
+| Input field for email address | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for email confirmation | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for username | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for password | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for password confirmation | Activates text area | Click textfield | Activates text area | Pass |
+| Back to login button | Redirect user to sign in page | Click button | Redirect user to sign in page | Pass |
+| Sign up button | Redirects user to home page | Click button | Redirects user to home page | Pass |
+| `Logout page` |
+| Cancel button | Redirect user to home page | Click button | Redirect user to home page | Pass |
+| Sign out button | Redirects user to home page | Click button | Redirects user to home page | Pass |
+| `My profile Page` |
+| Input field for Phone number | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for address 1 | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for address 2 | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for Town | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for Conty, State, Locality | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for Postal Code | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for Country| Activates text area | Click textfield | Activates text area | Pass |
+| Update Information button | Update users information | Click button | Update users information | Pass |
+| `Product Management` |
+| Dropdown menu for Category | Shows menu | Click menu | Shows menu | Pass |
+| Input field for Sku | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for Name | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for Description | Activates text area | Click textfield | Activates text area | Pass |
+| Input field for Price| Activates text area and increase and decrease number| Click textfield | Activates text area and increase and decrease number | Pass |
+| Input field for Rating | Activates text area and increase and decrease number | Click textfield | Activates text area and increase and decrease number | Pass |
+| Input field for Image Url | Activates text area | Click textfield | Activates text area | Pass |
+| Button for Select Image | Opens iamge folder | Click button | Opens iamge folder | Pass |
+| Button for Cancel | Cancel product adding | Click button | Cancel product adding | Pass |
+| Button for Add Product| Adds product | Click button | Adds product | Pass |
+
+
 | `Admin Posts Page` |
 | --- | --- | --- | --- | --- |
 | `Privacy Policy Page` |
