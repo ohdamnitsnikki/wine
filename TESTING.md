@@ -253,11 +253,12 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | Textfield with buttons | Activates textfield and buttons increase or decrease number | Click button | Activates textfield and buttons increase or decrease number | Pass |
 | Keep Shopping button | Redirects users to all products page | Click button | Redirects users to all products page | Pass |
 | Add To Bag button | Adds product to bag | Click button | Adds product to bag | Pass |
-
 | `Product Detail Page` |
 | Link to Terms & Conditions Page | Redirects user to the Terms & Conditions page | Click link | Redirected to the terms & conditions page | Pass |
 | Get Safe Online link | Redirects the user to the get safe online website in a new browser tab | Click link | site opens, but in same browser tab | Fail |
 | Link to Rocket Lawyer site in Attribution section | User is taken to the Rocket Lawyer site in a new browser tab | Click link | Rocket Lawyer site opens, but in same tab | Fail |
+
+
 | `Terms and Conditions Page` |
 | Link to Rocket Lawyer site in Attribution section | User is taken to the Rocket Lawyer site in a new browser tab | Click link | 404 page opens | Fail |
 | `404 Page` |

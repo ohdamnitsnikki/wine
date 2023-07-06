@@ -6,6 +6,7 @@ body {
     background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
+    position: relative;
     color: #555;
     font-family: 'Lato';
     
@@ -379,6 +380,27 @@ a.category-badge > span.badge:hover {
     max-width: 80%;
   }
 }
+
+/* Footer */
+
+.footer {
+    background-color: #faebd7;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .footer.show {
+    opacity: 1;
+  }
+  .footer .social-icons {
+    margin-bottom: 10px;
+  }
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
