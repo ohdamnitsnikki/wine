@@ -245,10 +245,13 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | Button for Select Image | Opens iamge folder | Click button | Opens iamge folder | Pass |
 | Button for Cancel | Cancel product adding | Click button | Cancel product adding | Pass |
 | Button for Add Product| Adds product | Click button | Adds product | Pass |
+| `Product Page` |
+| Dropdown Menu for sorting of page| Show sorting option and sorts after choice | Click menu | Shows sorting option and sorts after choice | Pass |
+| Product link| Redirects user to products page | Click link | Redirects user to products page | Pass |
+| Category link| Redirects user to specific category | Click link | Redirects user to specific category | Pass |
+| Category picked button (if category choosen) | Redirects user to specific category | Click button | Redirects user to specific category | Pass |
+| Like button (if user is logged in) | Increase number of likes | Click button | Increase number of likes | Pass |
 
-
-| `Admin Posts Page` |
-| --- | --- | --- | --- | --- |
 | `Privacy Policy Page` |
 | Link to Terms & Conditions Page | Redirects user to the Terms & Conditions page | Click link | Redirected to the terms & conditions page | Pass |
 | Get Safe Online link | Redirects the user to the get safe online website in a new browser tab | Click link | site opens, but in same browser tab | Fail |
