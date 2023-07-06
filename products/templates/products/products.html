@@ -85,9 +85,9 @@
                                             {% endif %}
                                             <p>
                                             {% if product.likes %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.likes }}</small>
+                                                <small class="text-muted"><i class="far fa-heart"></i>{{ product.likes }}</small>
                                             {% else %}
-                                                <small class="text-muted"> <i class="far fa-heart"></i>No Likes</small>
+                                                <small class="text-muted"><i class="far fa-heart"></i>No Likes</small>
                                             {% endif %}
                                             </p>
                                             {% if request.user.is_superuser %}
