@@ -246,13 +246,15 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | Button for Cancel | Cancel product adding | Click button | Cancel product adding | Pass |
 | Button for Add Product| Adds product | Click button | Adds product | Pass |
 | `Product Page` |
-| Dropdown Menu for sorting of page| Show sorting option and sorts after choice | Click menu | Shows sorting option and sorts after choice | Pass |
-| Product link| Redirects user to products page | Click link | Redirects user to products page | Pass |
-| Category link| Redirects user to specific category | Click link | Redirects user to specific category | Pass |
-| Category picked button (if category choosen) | Redirects user to specific category | Click button | Redirects user to specific category | Pass |
-| Like button (if user is logged in) | Increase number of likes | Click button | Increase number of likes | Pass |
+| Product link | Opens product image in a new window | Click link | Opens product image in a new window | Pass |
+| Category link | Redirects user to specific category page | Click link | Redirects user to specific category page | Pass |
+| Like button | Increase number of likes | Click button | Increase number of likes | Pass |
+| Dropdown Menu | Gives user option to buy bottle or box | Click button | Gives user option to buy bottle or box | Pass |
+| Textfield with buttons | Activates textfield and buttons increase or decrease number | Click button | Activates textfield and buttons increase or decrease number | Pass |
+| Keep Shopping button | Redirects users to all products page | Click button | Redirects users to all products page | Pass |
+| Add To Bag button | Adds product to bag | Click button | Adds product to bag | Pass |
 
-| `Privacy Policy Page` |
+| `Product Detail Page` |
 | Link to Terms & Conditions Page | Redirects user to the Terms & Conditions page | Click link | Redirected to the terms & conditions page | Pass |
 | Get Safe Online link | Redirects the user to the get safe online website in a new browser tab | Click link | site opens, but in same browser tab | Fail |
 | Link to Rocket Lawyer site in Attribution section | User is taken to the Rocket Lawyer site in a new browser tab | Click link | Rocket Lawyer site opens, but in same tab | Fail |
