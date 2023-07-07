@@ -248,11 +248,15 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | `Product Page` |
 | Product link | Opens product image in a new window | Click link | Opens product image in a new window | Pass |
 | Category link | Redirects user to specific category page | Click link | Redirects user to specific category page | Pass |
-| Like button | Increase number of likes | Click button | Increase number of likes | Pass |
+| Like button (if user is logged in) | Increase number of likes | Click button | Increase number of likes | Pass |
 | Dropdown Menu | Gives user option to buy bottle or box | Click button | Gives user option to buy bottle or box | Pass |
 | Textfield with buttons | Activates textfield and buttons increase or decrease number | Click button | Activates textfield and buttons increase or decrease number | Pass |
 | Keep Shopping button | Redirects users to all products page | Click button | Redirects users to all products page | Pass |
 | Add To Bag button | Adds product to bag | Click button | Adds product to bag | Pass |
+| Comment form (if user is logged in) | Make a comment | Click form | Make a comment | Pass |
+| Written comment (if user is author) | Edit and delete comment | Click edit or delete button | Edit and delete comment | Pass |
+
+
 | `Product Detail Page` |
 | Link to Terms & Conditions Page | Redirects user to the Terms & Conditions page | Click link | Redirected to the terms & conditions page | Pass |
 | Get Safe Online link | Redirects the user to the get safe online website in a new browser tab | Click link | site opens, but in same browser tab | Fail |

@@ -11,13 +11,15 @@ from .forms import ProductForm
 
 
 def all_products(request):
-    """ A view to show all products, including sorting and search queries """
+    """ View to show products """
 
     products = Product.objects.all()
     query = None
     categories = None
     sort = None
     direction = None
+
+    """ Search queries """
 
     if request.GET:
         if 'sort' in request.GET:
@@ -61,9 +63,10 @@ def all_products(request):
 
     return render(request, 'products/products.html', context)
 
-
-def product_detail(request, product_id):
     """ A view to show individual product details """
+
+
+def product_detail(self, request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
@@ -71,17 +74,38 @@ def product_detail(request, product_id):
         'product': product,
     }
 
+    liked = False
+    if product.likes.filter(id=self.request.user.id).exists():
+        liked = True
+
     return render(request, 'products/product_detail.html', context)
 
 
-class PostLike(View):
-    
-    def post(self, request, slug, *args, **kwargs):
-        post = get_object_or_404(Post, slug=slug)
-        if post.likes.filter(id=request.user.id).exists():
-            post.likes.remove(request.user)
+def get(self, request, *args):
+    liked = False
+    if post.likes.filter(id=self.request.user.id).exists():
+        liked = True
+
+    return render(
+        request,
+        "product_detail.html",
+        {
+            "comments": comments,
+            "commented": False,
+            "liked": liked,
+            "comment_form": CommentForm()
+        },
+    )
+
+
+class ProductLike(View):
+
+    def product(self, request, *args):
+        product = get_object_or_404(product, product.id)
+        if product.likes.filter(id=request.user.id).exists():
+            product.likes.remove(request.user)
         else:
-            post.likes.add(request.user)
+            product.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('product_detail', args=[product.id]))
 
