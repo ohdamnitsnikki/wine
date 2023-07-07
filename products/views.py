@@ -107,7 +107,7 @@ class ProductLike(View):
         else:
             product.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('product_detail', args=[slug]))
+        return HttpResponseRedirect(reverse('product_detail', args=[product.id]))
 
 
 @login_required
