@@ -246,6 +246,13 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | Button for Cancel | Cancel product adding | Click button | Cancel product adding | Pass |
 | Button for Add Product| Adds product | Click button | Adds product | Pass |
 | `Product Page` |
+| Product link | Redirects user to product detail page | Click link | Redirects user to product detail page | Pass |
+| Dropdown menu for sorting | Gives user option on how to sort products on page | Click menu| Gives user option on how to sort products on page | Pass |
+| Category link on product | Redirects user to that category | Click link | Redirects user to that category | Pass |
+| Category button (if user is on category) | Redirects user to that category | Click button | Redirects user to that category | Pass |
+| Products Home link (if user is on category) | Redirects user to all products page | Click link | Redirects user to all products page | Pass |
+| Edit and Delete link (if user is superuser) | Edit link opens product management page and delete link deletes product | Click link | Edit link opens product management page and delete link deletes product | Pass |
+| `Product Detail Page` |
 | Product link | Opens product image in a new window | Click link | Opens product image in a new window | Pass |
 | Category link | Redirects user to specific category page | Click link | Redirects user to specific category page | Pass |
 | Like button (if user is logged in) | Increase number of likes | Click button | Increase number of likes | Pass |
@@ -255,15 +262,16 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | Add To Bag button | Adds product to bag | Click button | Adds product to bag | Pass |
 | Comment form (if user is logged in) | Make a comment | Click form | Make a comment | Pass |
 | Written comment (if user is author) | Edit and delete comment | Click edit or delete button | Edit and delete comment | Pass |
+| `Shopping Bag page` |
+| Decrease Amount button | Decrease amount of product choosen | Click button | Decrease amount of product choosen | Pass |
+| Increase Amount button | Increase amount of product choosen | Click button | Increase amount of product choosen | Pass |
+| Update link | Update to new amount choosen | Click button | Update to new amount choosen | Pass |
+| Remove link | Remove products from shopping bag | Click button | Remove products from shopping bag | Pass |
+| Keep Shopping button | Redirects user to all products page | Click button | Redirects user to all products page | Pass |
+| Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
 
 
-| `Product Detail Page` |
-| Link to Terms & Conditions Page | Redirects user to the Terms & Conditions page | Click link | Redirected to the terms & conditions page | Pass |
-| Get Safe Online link | Redirects the user to the get safe online website in a new browser tab | Click link | site opens, but in same browser tab | Fail |
-| Link to Rocket Lawyer site in Attribution section | User is taken to the Rocket Lawyer site in a new browser tab | Click link | Rocket Lawyer site opens, but in same tab | Fail |
-
-
-| `Terms and Conditions Page` |
+| `Secure Scheckout Page` |
 | Link to Rocket Lawyer site in Attribution section | User is taken to the Rocket Lawyer site in a new browser tab | Click link | 404 page opens | Fail |
 | `404 Page` |
 | (User Logged in) Home Button | User will be redirected to the home page | Click home button | Redirected to the home page | Pass |

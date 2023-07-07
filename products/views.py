@@ -66,24 +66,24 @@ def all_products(request):
     """ A view to show individual product details """
 
 
-def product_detail(self, request, product_id):
+def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
     context = {
-        'product': product,
+            'product': product,
     }
 
     liked = False
-    if product.likes.filter(id=self.request.user.id).exists():
+    if product.likes.filter(id=request.user.id).exists():
         liked = True
 
     return render(request, 'products/product_detail.html', context)
 
 
-def get(self, request, *args):
+def get(self, request, slug, *args, **kwargs):
     liked = False
-    if post.likes.filter(id=self.request.user.id).exists():
+    if product.likes.filter(id=request.user.id).exists():
         liked = True
 
     return render(
@@ -100,14 +100,14 @@ def get(self, request, *args):
 
 class ProductLike(View):
 
-    def product(self, request, *args):
-        product = get_object_or_404(product, product.id)
+    def product(self, request, slug, *args, **kwargs):
+        product = get_object_or_404(product, slug=slug)
         if product.likes.filter(id=request.user.id).exists():
             product.likes.remove(request.user)
         else:
             product.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('product_detail', args=[product.id]))
+        return HttpResponseRedirect(reverse('product_detail', args=[slug]))
 
 
 @login_required
