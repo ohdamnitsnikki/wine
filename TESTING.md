@@ -262,6 +262,7 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | Add To Bag button | Adds product to bag | Click button | Adds product to bag | Pass |
 | Comment form (if user is logged in) | Make a comment | Click form | Make a comment | Pass |
 | Written comment (if user is author) | Edit and delete comment | Click edit or delete button | Edit and delete comment | Pass |
+| Edit and Delete link (if user is superuser) | Edit link opens product management page and delete link deletes product | Click link | Edit link opens product management page and delete link deletes product | Pass |
 | `Shopping Bag page` |
 | Decrease Amount button | Decrease amount of product choosen | Click button | Decrease amount of product choosen | Pass |
 | Increase Amount button | Increase amount of product choosen | Click button | Increase amount of product choosen | Pass |
