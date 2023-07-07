@@ -272,15 +272,20 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 
 
 | `Secure Scheckout Page` |
-| Link to Rocket Lawyer site in Attribution section | User is taken to the Rocket Lawyer site in a new browser tab | Click link | 404 page opens | Fail |
+| Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
+| Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
+| Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
+| Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
+| Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
+
 | `404 Page` |
 | (User Logged in) Home Button | User will be redirected to the home page | Click home button | Redirected to the home page | Pass |
 | (Guest User) Login Button | User redirected to the login page | Click login button | Redirected to the login page | Pass |
 | (Guest User) Sign Up Button | User redirected to the sign up page | Click sign up button | Redirected to sign up page | Pass |
 | `Footer` |
-| Footer - Join now button | Redirects user to the sign up page | Click button | Redirected to sign up page | Pass |
-| Footer - Social media links | Opens new tab to the social media site | Clicked each icon | New tabs opened for each site | Pass |
-| Footer - Privacy Policy link | Redirects to the privacy policy page | Clicked link | Redirected to privacy policy page | Pass |
-| footer - Terms and conditions link | Redirects to the terms and conditions page | Clicked link | Redirected to terms and conditions page | Pass |
+| Facebook link | Redirects user to the sign up page | Click button | Redirected to sign up page | Pass |
+| Instagram link - Social media links | Opens new tab to the social media site | Clicked each icon | New tabs opened for each site | Pass |
+| Subsribe link - Privacy Policy link | Redirects to the privacy policy page | Clicked link | Redirected to privacy policy page | Pass |
+
 
 Back to [README.md](README.md)
