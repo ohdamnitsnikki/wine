@@ -81,7 +81,7 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
-def get(self, request, slug, *args, **kwargs):
+def get(self, request, *args, **kwargs):
     liked = False
     if product.likes.filter(id=request.user.id).exists():
         liked = True
@@ -100,7 +100,7 @@ def get(self, request, slug, *args, **kwargs):
 
 class ProductLike(View):
 
-    def product(self, request, slug, *args, **kwargs):
+    def product(self, request, *args, **kwargs):
         product = get_object_or_404(product, pk=product_id)
         if product.likes.filter(id=request.user.id).exists():
             product.likes.remove(request.user)
