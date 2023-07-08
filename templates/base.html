@@ -164,6 +164,12 @@
 <script>
     $(document).ready(function() {
       var previousScroll = 0;
+  
+      // Check if the page content height is shorter than the window height on page load
+      if ($(document).height() <= $(window).height()) {
+        $('.footer').addClass('show');
+      }
+  
       $(window).scroll(function() {
         var currentScroll = $(this).scrollTop();
         if (currentScroll < previousScroll) {

@@ -385,7 +385,7 @@ a.category-badge > span.badge:hover {
 
 .footer {
     background-color: #faebd7;
-    padding: 20px;
+    padding-top: 20px;
     text-align: center;
     position: fixed;
     bottom: 0;
