@@ -68,13 +68,7 @@
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                            <div class="col-12">
-                                <p><strong>Size:</strong></p>
-                                <select class="form-control rounded-0 w-50" name="product_amount" id='id_product_amount'>
-                                    <option value="bottle">Bottle</option>
-                                    <option value="box">Box</option>
-                                </select>
-                            </div>
+                            
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">

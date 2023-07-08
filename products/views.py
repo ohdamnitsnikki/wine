@@ -100,8 +100,8 @@ def get(self, request, *args, **kwargs):
 
 class ProductLike(View):
 
-    def product(self, request, *args, **kwargs):
-        product = get_object_or_404(product, pk=product_id)
+    def post(self, request, *args, **kwargs):
+        product = get_object_or_404(Product, pk=product_id)
         if product.likes.filter(id=request.user.id).exists():
             product.likes.remove(request.user)
         else:
