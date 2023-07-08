@@ -394,9 +394,11 @@ a.category-badge > span.badge:hover {
     z-index: 9999;
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none; 
   }
   .footer.show {
     opacity: 1;
+    pointer-events:auto;
   }
   .footer .social-icons {
     margin-bottom: 10px;

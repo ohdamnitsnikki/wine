@@ -42,24 +42,23 @@
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}
-
-                    <p>
+                    <small>
                         {% if user.is_authenticated %}
                         <form class="text-muted" action="{% url 'product_like' product.id %}" method="POST">
                             {% csrf_token %}
                             <button type="submit" name="product.id" value="{{ product.id }}" class="btn-like{% if liked %} liked{% endif %}">
                                 {% if liked %}
-                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart">Be the first one to like!</i>
                                 {% else %}
                                     <i class="fa-duotone fa-heart"></i>
                                 {% endif %}
                             </button>
                         </form>
                     {% else %}
-                        <small class="text-muted"><i class="far fa-heart"></i> Be the first one to like!</small>
+                        <small class="text-muted"><i class="far fa-heart"></i></small>
                     {% endif %}
                     <small class="text-muted">{{ product.number_of_likes }}</small>
-                    </p>
+                </small>
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 
