@@ -66,48 +66,28 @@ def all_products(request):
     """ A view to show individual product details """
 
 
-def product_detail(request, product_id):
-
-    product = get_object_or_404(Product, pk=product_id)
-
-    context = {
-            'product': product,
-    }
-
-    liked = False
-    if product.likes.filter(id=request.user.id).exists():
-        liked = True
-
-    return render(request, 'products/product_detail.html', context)
-
-
-def get(self, request, *args, **kwargs):
-    liked = False
-    if product.likes.filter(id=request.user.id).exists():
-        liked = True
-
-    return render(
-        request,
-        "product_detail.html",
-        {
-            "comments": comments,
-            "commented": False,
-            "liked": liked,
-            "comment_form": CommentForm()
-        },
-    )
-
-
 class ProductLike(View):
-
     def post(self, request, *args, **kwargs):
+        product_id = kwargs['product_id']  # Retrieve product_id from kwargs
         product = get_object_or_404(Product, pk=product_id)
+
         if product.likes.filter(id=request.user.id).exists():
             product.likes.remove(request.user)
         else:
             product.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('product_detail', args=[product.id]))
+
+
+def product_detail(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    context = {'product': product}
+
+    liked = False
+    if product.likes.filter(id=request.user.id).exists():
+        liked = True
+
+    return render(request, 'products/product_detail.html', context)
 
 
 @login_required
