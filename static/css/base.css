@@ -372,6 +372,13 @@ a.category-badge > span.badge:hover {
 	color: #17a2b8; /* text-info */
 }
 
+/* Contact us page */
+.contact_form {
+    background-color: #007bff;
+    height: 56vh;
+    margin-top: 31px;
+}
+
 /* Media Queries */
 
 /* Slightly larger container on xl screens */
