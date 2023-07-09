@@ -381,6 +381,10 @@ a.category-badge > span.badge:hover {
     color: #000;
 }
 
+form label {
+    font-size: 2vh;
+}
+
 /* Media Queries */
 
 /* Slightly larger container on xl screens */
