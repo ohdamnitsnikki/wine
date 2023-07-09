@@ -5,7 +5,7 @@ from django_countries.fields import CountryField
 class ContactForm(forms.Form):
     product_name = forms.CharField(label='Product Name')
     country = CountryField().formfield()
-    meat_or_fish = forms.ChoiceField(choices=(('red', 'Red Meat'), ('white', 'White Fish')), label='Meat or Fish')
+    meat_or_fish = forms.ChoiceField(choices=(('meat', 'Red Meat'), ('fish', 'White Fish')), label='Meat or Fish')
     description = forms.CharField(widget=forms.Textarea, label='Description')
 
     def __init__(self, *args, **kwargs):

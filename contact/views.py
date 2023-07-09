@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm
 from .models import ContactEntry
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+
 
 @login_required
 def contact(request):
@@ -28,8 +30,8 @@ def contact(request):
             )
             entry.save()
 
-            # Redirect the user to a success page
-            return redirect('success')
+        messages.success(request, f'Your message is sent to the admin!')
+        
     else:
         form = ContactForm(user=request.user)
 
