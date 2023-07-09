@@ -195,8 +195,8 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | `Navbar` |
 | Site Name | Redirects to home page | Click site name | Redirects to home page | Pass |
 | My Account | Show dropdown menu for login and register | Click my account | Show dropdown menu for login and register | Pass |
-| My Account (as a logged in user) | Show dropdown menu for my profile and logout | Click my account | Show dropdown menu for my profile and logout | Pass |
-| My Account (as a logged in admin) | Show dropdown menu for login,register and product management | Click my account | Show dropdown menu for login,register and product management | Pass |
+| My Account (as a logged in user) | Show dropdown menu for my profile, contact us and logout | Click my account | Show dropdown menu for my profile,contact us and logout | Pass |
+| My Account (as a logged in admin) | Show dropdown menu for login,register, contact us and product management | Click my account | Show dropdown menu for login,register, contact us and product management | Pass |
 | Shopping Bag | Redirects to bag page | Click site name | Redirects to bag page | Pass |
 | Searchbar | Give option to write in the textfield | Click searchbar | Give option to write in the textfield | Pass |
 | All Products | Show dropdown menu for all products | Click all producst | Show dropdown menu for all products | Pass |
@@ -234,6 +234,12 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | Input field for Postal Code | Activates text area | Click textfield | Activates text area | Pass |
 | Input field for Country| Activates text area | Click textfield | Activates text area | Pass |
 | Update Information button | Update users information | Click button | Update users information | Pass |
+| `Contact Us` |
+| Textfield for product name | Activates textarea | Click field | Activates textarea | Pass |
+| Dropdown menu for Countries | Shows menu | Click menu | Shows menu | Pass |
+| Dropdown menu for Category | Shows menu | Click menu | Shows menu | Pass |
+| Textfield for Description | Activates textarea | Click field | Activates textarea | Pass |
+| Send button | Sends message to the admin panel | Click button | Sends message to the admin panel | Pass |
 | `Product Management` |
 | Dropdown menu for Category | Shows menu | Click menu | Shows menu | Pass |
 | Input field for Sku | Activates text area | Click textfield | Activates text area | Pass |
