@@ -276,23 +276,27 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | Remove link | Remove products from shopping bag | Click button | Remove products from shopping bag | Pass |
 | Keep Shopping button | Redirects user to all products page | Click button | Redirects user to all products page | Pass |
 | Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
-
-
-| `Secure Scheckout Page` |
-| Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
-| Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
-| Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
-| Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
-| Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
-
+| `Secure Checkout Page` |
+| Name textfield | Activates required textfield | Click field | Activates required textfield | Pass |
+| Country dropdown menu | Activates required dropdown menu | Click button | Activates required dropdown menu | Pass |
+| Postal Code textfield | Activates required textfield | Click field | Activates required textfield | Pass |
+| Town or City textfield | Activates required textfield | Click field | Activates required textfield | Pass |
+| Street Address 1 textfield | Activates required textfield | Click field | Activates required textfield | Pass |
+| Street Address 2 textfield | Activates textfield | Click field | Activates textfield | Pass |
+| County, State or Locality textfield | Activates textfield | Click field | Activates textfield | Pass |
+| Strip payment textfield | Activates required payment field | Click field | Activates required payment field | Pass |
+| Adjust Bag button | Redirects user to the shopping bag | Click button | Redirects user to the shopping bag | Pass |
+| Complete Order button | Redirects user to chackout success page | Click button | Redirects user to chackout success page | Pass |
+| `Checkout Success Page` |
+| Products button | Redirects user to all products page | Click button | Redirects user to all products page | Pass |
 | `404 Page` |
 | (User Logged in) Home Button | User will be redirected to the home page | Click home button | Redirected to the home page | Pass |
 | (Guest User) Login Button | User redirected to the login page | Click login button | Redirected to the login page | Pass |
 | (Guest User) Sign Up Button | User redirected to the sign up page | Click sign up button | Redirected to sign up page | Pass |
 | `Footer` |
-| Facebook link | Redirects user to the sign up page | Click button | Redirected to sign up page | Pass |
-| Instagram link - Social media links | Opens new tab to the social media site | Clicked each icon | New tabs opened for each site | Pass |
-| Subsribe link - Privacy Policy link | Redirects to the privacy policy page | Clicked link | Redirected to privacy policy page | Pass |
+| Facebook link | Redirects user our Facebook account in a new window | Click link | Redirects user our Facebook account in a new window | Pass |
+| Instagram link | Redirects user our Instagram account in a new window | Click link | Redirects user our Instagram account in a new window | Pass |
+| Subsribe link | Redirects user our subscribe page in a new window | Click link | Redirects user our subscribe page in a new window | Pass |
 
 
 Back to [README.md](README.md)
