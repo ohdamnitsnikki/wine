@@ -1,113 +1,532 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Wine O'Clock Website
 
-Welcome ohdamnitsnikki,
+The Wine O'clock Website is a e-commerce site where users can buy wine.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Wine O'Clock Website shown on a range of devices](assets/images/bullybookclubwebsite.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[View Wine O'Clock on Github Pages](https://kera-cudmore.github.io/Bully-Book-Club/)
 
-## Gitpod Reminders
+![GitHub last commit](https://img.shields.io/github/last-commit/kera-cudmore/bully-book-club?color=red)
+![GitHub contributors](https://img.shields.io/github/contributors/kera-cudmore/bully-book-club?color=orange)
+![GitHub language count](https://img.shields.io/github/languages/count/kera-cudmore/bully-book-club?color=yellow)
+![GitHub top language](https://img.shields.io/github/languages/top/kera-cudmore/bully-book-club?color=green)
+![W3C Validation](https://img.shields.io/w3c-validation/html?color=blueviolet&targetUrl=https%3A%2F%2Fkera-cudmore.github.io%2FBully-Book-Club)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## CONTENTS
 
-`python3 -m http.server`
+* [User Experience (UX)](#User-Experience-(UX))
+  * [Initial Discussion](#Initial-Discussion)
+  * [User Stories](#User-Stories)
 
-A blue button should appear to click: _Make Public_,
+* [Design](#Design)
+  * [Colour Scheme](#Colour-Scheme)
+  * [Typography](#Typography)
+  * [Imagery](#Imagery)
+  * [Wireframes](#Wireframes)
+  * [Features](#Features)
+  * [Accessibility](#Accessibility)
 
-Another blue button should appear to click: _Open Browser_.
+* [Technologies Used](#Technologies-Used)
+  * [Languages Used](#Languages-Used)
+  * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* [Deployment & Local Development](#Deployment-&-Local-Development)
+  * [Deployment](#Deployment)
+  * [Local Development](#Local-Development)
+    * [How to Fork](#How-to-Fork)
+    * [How to Clone](#How-to-Clone)
 
-A blue button should appear to click: _Make Public_,
+* [Testing](#Testing)
+  * [W3C Validator](#W3C-Validator)
+  * [Solved Bugs](#Solved-Bugs)
+  * [Known Bugs](#Known-Bugs)
+  * [Testing User Stories](#Testing-User-Stories)
+  * [Lighthouse](#Lighthouse)
+    * [Index Page](#Index-Page)
+    * [Books Page](#Books-Page)
+    * [Contact Us Page](#Contact-Us-Page)
+    * [Thank You Page](#Thank-You-Page)
+  * [Full Testing](#Full-Testing)
+  
+* [Credits](#Credits)
+  * [Code Used](#Code-Used)
+  * [Content](#Content)
+  * [Media](#Media)
+  * [Acknowledgments](#Acknowledgments)
 
-Another blue button should appear to click: _Open Browser_.
+- - -
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## User Experience (UX)
 
-To log into the Heroku toolbelt CLI:
+### Initial Discussion
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Bully Book Club is an online book club that reviews a book once a month on Instagram. Members post a photo of the book with their bulldog with a review and use hashtags to drive up the visibility of the chosen book, author and publisher on that day.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Due to a recent growth in membership and personal commitments, the owner of bully book club is spending a large amount of time answering questions from users asking what the book club is reading and how to participate.
 
-------
+#### Key information for the site
 
-## Release History
+* What is the current months book.
+* What are the next books.
+* How to become a member and take part.
+* A way for people to contact the book club with questions and recommendations.
+* Updates on what is coming to the book club in 2022.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### User Stories
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### Client Goals
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* To be able to view the site on a range of device sizes.
+* To make it easy for potential members to find out what the book club is and how to take part.
+* To make it clear for members to see what we are currently reading and what is coming up next.
+* To allow people to be able to contact the Book Club to ask further questions or with book recommendations etc.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### First Time Visitor Goals
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* I want to find out what is Bully Book Club and how I can take part.
+* I want to be able to navigate the site easily to find information.
+* I want to be able to find their Instagram profile.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+#### Returning Visitor Goals
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* I want to find up to date information on what the book club is reading.
+* I want to be able to easily contact the book club with questions I might have.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### Frequent Visitor Goals
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* I want to be able to recommend a book for the book club to read.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- - -
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Design
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Colour Scheme
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Bully Book Club Website Colour Palette](docs/colourpalette.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The website uses a palette of pastel colours that are often used in the Bully Book Club logo images. The colour palette was created using the [Coolors](https://coolors.co/) website.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Typography
 
-------
+Google Fonts was used for the following fonts:
 
-## FAQ about the uptime script
+* Merriweather is used for headings on the site. It is a serif font.
 
-**Why have you added this script?**
+* Raleway is used for the body text on the site. It is a sans-serif font.  
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* Indie Flower is used on the thank you page for Harrison Fords message. It is a cursive font.
 
-**How will this affect me?**
+### Imagery
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+The member images were used with the permission of their owners. All book covers were taken from the publishers websites. I have credited these in the [credits](#Credits) section.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Wireframes
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Wireframes were created for mobile, tablet and desktop.
 
-**So….?**
+[Home Page Wireframe](docs/wireframes/indexwireframe.png)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+[Books Wireframe](docs/wireframes/bookswireframe.png)
 
-**Can I opt out?**
+[Contact Us Wireframe](docs/wireframes/contactuswireframe.png)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Features
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+The website is comprised of four pages, three of which are accessible from the navigation menu (home page, books page & contact us page). The fourth page is a thank you page which is shown once a user submits the form on the contact us page.
 
-**Anything more?**
+* All Pages on the website have:
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+  * A responsive navigation bar at the top which allows the user to navigate through the site.  To the left of the navigation bar is an image of book clubs logo together with the text Bully Book Club. To the right of the navigation bar are the links to the websites pages (home, books, and contact us). To allow a good user experience of the site, the Bully Book Club text is hidden with a media query on mobile devices to prevent the navigation bar looking cluttered. When viewing with mobile devices the navigation links change to a burger toggler. This was implemented to give the site a clean look and to promote a good user experience, as users are used to seeing the burger icon when on mobile devices to navigate a site.
 
----
+  * A footer which contains social media icon links to instagram and goodreads. There is also an envelope icon which takes the user to the contact us page. Icons were used to keep the footer clean and because they are universally recognisable.
 
-Happy coding!
+* Home Page.
+  * Carousel Section.
+  The carousel shows photographs of the members of Bully Book Club.
+  * About Us Section.
+  This section is broken down into four subsections and gives users some information on the book club. On large screens the subsections are laid out in a row, however on mobile devices the subsections are stacked vertically.
+  * Join Us Section.
+  This section gives the user more information on how they can join in with the book club.
 
+* Books Page. The navigation link for books is a drop down menu with the following sections:
+  * Currently Reading.
+  This takes the user to the card of the book the book club is currently reading.
+  * Reading Next.
+  This takes the user to the card of the book the book club will be reading next.
+  * Yearly Sections.
+  This takes the user to the section of the year they have chosen. There are currently 3 years to select from.
+  The books page implements a return to top icon which allows users to return to the navigation menu easily from any point as they scroll down the page.
 
+* Contact Us Page.
+  * A List of reasons users may want to contact the book club.
+  * Form
+  The form contains fields for the users name, email address, instagram handle, checkboxes giving a reason for contact and a text area for the user to add further information. The user submits the form using the submit button. Users must fill in the name, email and text area fields to be able to submit the form. If they don't a tooltip will guide them to fill in any information they have missed.
 
-Media:
-Homepage data:image/jpeg;base64,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
+* Thank You Page.
+  * A message thanks the user for submitting the form and lets them know someone will be in touch soon.
+  * Image and message from Harrison Ford, Dictator of the Bully Bookclub.
+
+* Future Implementations.
+  * Use javascript to perform return to top function on books page.
+  * Use javascript and listeners to require at least one checkbox to be checked before submitting the form on contact us page.
+  * A meet the members page - This would have a photo of the member together with a small bio. A link to their instagram and/or goodreads page.
+  * Competitions/giveaways page - This page would give further information/rules on the competitions and giveaways the book club hosts.
+
+### Accessibility
+
+I have been mindful during coding to ensure that the website is as accessible friendly as possible. I have achieved this by:
+
+* Using semantic HTML.
+* Using descriptive alt attributes on images on the site.
+* Providing information for screen readers where there are icons used and no text - such as the review ratings for books & footer icons.
+* Ensuring that there is a sufficient colour contrast throughout the site.
+* Ensuring menus are accessible by marking the current page as current for screen readers.
+
+- - -
+
+## Technologies Used
+
+### Languages Used
+
+HTML and CSS were used to create this website.
+
+### Frameworks, Libraries & Programs Used
+
+Balsamiq - Used to create wireframes.
+
+Git - For version control.
+
+Github - To save and store the files for the website.
+
+Bootstrap Version 4.6 - The framework for the website. Code for the navigation bar, carousel, cards and form were used and modified. Additional CSS styling was also implemented in style.css.
+
+Google Fonts - To import the fonts used on the website.
+
+Font Awesome - For the iconography on the website.
+
+Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+[Tiny PNG](https://tinypng.com/) To compress images.
+
+[Birme](https://www.birme.net/) To resize images and change to webp format.
+
+[Favicon.io](https://favicon.io/) To create favicon.
+
+[Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
+[Shields.io](https://shields.io/) To add badges to the README
+
+- - -
+
+## Deployment & Local Development
+
+### Deployment
+
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
+
+1. Log in (or sign up) to Github.
+2. Find the repository for this project, Bully-Book-Club.
+3. Click on the Settings link.
+4. Click on the Pages link in the left hand side navigation bar.
+5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+6. Click Save. Your live Github Pages site is now deployed at the URL shown.
+
+### Local Development
+
+#### How to Fork
+
+To fork the Bully-Book-Club repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, kera-cudmore/Bully-Book-Club.
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the Bully-Book-Club repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, kera-cudmore/Bully-Book-Club.
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+- - -
+
+## Testing
+
+Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along.
+
+The following issues were raised during my mid project meeting with my mentor:
+
+* The Join Us section on the home page was not in alignment with the rest of the page. Padding has now been added to bring it in alignment with the rest of the pages padding.
+* There was an issue on smaller devices where the book columns were not displaying properly. This issue is documented under issue 2 in solved bugs.
+* The introduction paragraph on the books page was not aligned in style with the rest of the page. The text has now been centered.
+* The form could be submitted with only a name filled in. ~ A required attribute has been added to the email input and textarea.
+
+The Following items were brought up when I submitted my site to peer code review on slack.
+
+* Andrew Dempsey suggested to change the layout of the about us section on the index page to make it two rows instead of one, as this would improve the flow of the page on larger screens. I have moved the second two items into a second row and have added a margin bottom in the css to give the items a bit more breathing space.
+* Andrew also suggested it would look better if the contact us page inputs had a bit of room each side and were centred on the page, as they were rather long on larger screens. I have adjusted the size of the input fields and centred these on the page for a better viewing experience.
+
+### W3C Validator
+
+The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
+
+* [Index Page HTML](docs/testing/w3c/w3cindex.png)
+* [Books Page HTML](docs/testing/w3c/w3cbooks.png)
+* [Contact Us Page HTML](docs/testing/w3c/w3ccontact.png)
+* [Thank You Page HTML](docs/testing/w3c/w3cthankyou.png)
+* [404 Page HTML](docs/testing/w3c/w3c404.png)
+* [style.css CSS](docs/testing/w3c/w3ccss.png)
+
+### Solved Bugs
+
+1. The navbar would lose its alignment when on smaller devices, with the navbar brand pushing the burger icon down and over to the left underneath the site logo. This did not make for a good user experience, as the sites navigation for other sizes is on the right hand side of the navbar. While searching through the bootstrap documentation for navigation bars it directed me to display properties and hiding elements. Once I added the correct class I was then able to hide the navbar brand on devices smaller than a tablet, allowing the alignment of the navbar items to stay in place where I wanted them.
+
+2. The cards on the books page were very long when on smaller devices, causing the user to scroll for a while before seeing the next book. By using a media query to hide the card body I am able to condense the card for a better viewing experience on smaller devices.
+
+3. Halfway down the books page on small devices the columns would jump from displaying one column to displating two colums. After trying several ways to change this with no effect, I posed the problem to the slack community. Simen Daehlin suggested that I specify on the column class what sizes I would use for the screen sizes. By adding these column size classes it has resolved the problem. ![Column Issue](docs/columnissue.gif)
+
+4. The textarea required attribute wasn't activating when the form was submitted. After searching for an answer, I asked on slack and Dave Horrocks spotted that as I had a message in the textarea it was reading that as a message had been entered in the textarea. By adding the message into a placeholder the issue has been rectified.
+
+5. When viewing the books page which is very long, you would have to scroll all the way back up to the top to reach any navigation links. I thought a scroll to top button that floats on the bottom right would fix this problem, however I do not have any javascript knowledge currently to be able to achieve this. One alternative suggested by Dave Horrocks on slack was to change the top navbar to be fixed to the top, so this would be visable at all times. By adding the bootstrap class fixed-top I was able to achieve this. Then Dave suggested that I could use an anchor with an ID to achieve something that would work to achieve a scroll to top. He shared a codepen on slack showing how this would work I used the example of the codepen to create my return to top, and removed the fixed top class from my navigation bar to allow more space to view the books information.
+
+6. When I removed the fixed-top from my navbars there was a gap between the navbar and the top of the page. I added a class of navbar-top to the navbar and used CSS to positon the navbar to the top and left of the page. I added the width of 100% so the navbar would fill the width of the page.
+
+7. The carousel displayed fine on small screen devices, however when viewed on larger devices you would need to scroll down to see the entire image, which led to a bad user experience. By using media queries I targeted the large screen size and targeted the carousel item image to only take up 85% of the viewport height. This solved the issue by allowing the user to view the image without having to scroll, but the image was now being stretched across the screen. I searched google and stack overflow and it mentioned using object fit. I researched this further on MDN web docs and added object-fit: contain to the css which allows the image to correctly maintain its aspect ratio and view correctly.
+
+8. The footer was displaying at the bottom of the screen as I had used a nav tag within the footer with the class fixed bottom. As I reviewed my code for errors I realised that there was no need for a nav tag to be used within the footer. When I removed this I had to add some additional styling to the style.css file to add a background colour and some padding to the footer.
+
+9. When I asked for peer review on slack Anthony O'Brien pointed out that I was missing the container for the join us section on the home page. I had already added the css to style this section but had missed out putting the container class into the HTML. I have now added the container class to this section.
+
+10. The thank you page on small mobile devices was not displaying correctly as the image was off to one side and the navbar and footer did not reach across the page width. After struggling with this for a few days I reached out to Anthony O'Brien to see if he could point me in the right direction to solve this issue. He told me that it was simply an overflow issue and that by reducing the width of the image it would solve the issue. I have added an id to the issue and targeted the width to be 50% in the css.
+
+### Known Bugs
+
+1. Users are able to submit the contact us form without selecting any of the checkboxes. I would have preferred it so that at least one checkbox was selected before the form could be submitted, however when researching this problem I was unable to find a way to achieve this without the use of javascript. I asked on slack whether there was a way to achieve this, it was suggested that I could change the checkboxes to radios, however I wanted users to be able to select more than one option if they needed so this solution wouldn't work. The community confirmed that they only way they could think on to achieve this with checkboxes would be through the use of javascript and change listeners on the checkboxes. As I do not have any experience so far with javascript this is something I am currently unable to implement, but would like to add to the website in a future update.
+
+### Testing User Stories
+
+* First Time Visitors
+  * I want to find out what is Bully Book Club and how I can take part.
+  The about us and join us sections of the home page answer some common questions and explain how to take part.
+
+  ![About us and join us section of website](docs/testing/userstories/userstories1.png)
+
+  * I want to be able to navigate the site easily to find information.
+  All site navigation is in the top navigation bar, which consistantly appears on all pages of the site. As you are able to scroll for a long time on the book page, a return to top has been added to make it easy for users to return to the navigation menu.
+
+  ![navigation menu for mobile devices](docs/testing/userstories/userstories2.png)
+  ![navigation menu for desktop](docs/testing/userstories/userstories4.png)
+  ![return to top](docs/testing/userstories/userstories3.png)
+
+  * I want to be able to find their Instagram profile.  
+    The instagram icon and link for Bully Book Club is presented on each page in the footer. This opens a new browser window to instagram for a good user experience.
+
+    ![footer with instagram icon](docs/testing/userstories/userstories10.png)
+
+* Returning Visitors
+  * I want to find up to date information on what the book club is reading.
+  In the navigation menu there is are links to take you directly to what the book club is currently reading and what they will be reading next. The books also display a badge showing that this book is the current read and reading next.
+
+  ![Books navigation drop down menu](docs/testing/userstories/userstories5.png)
+  ![Books currently reading badge](docs/testing/userstories/userstories6.png)
+  ![Books reading next badge](docs/testing/userstories/userstories7.png)
+
+  * I want to be able to easily contact the book club with questions I might have.
+  A contact us page provides a form that users can fill in to contact the book club with any questions they might have. The use of a text area input allows the user to ask their specific question. The footer also contains an envelope icon which users can click to go to the contact us form from any page.
+
+  ![Contact us form and envelope icon in footer](docs/testing/userstories/userstories8.png)
+
+* Frequent Visitors
+  * I want to be able to recommend a book for the book club to read.
+  The contact us page allows users to select a checkbox for book recommendations. They are then able to add the books information into the text area.
+
+  ![checkboxes on contact us form](docs/testing/userstories/userstories9.png)
+
+### Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to allow me to test the performance, accessibility, best practices and SEO of the website.
+
+#### Index Page
+
+Initial lighthouse testing :
+[Lighthouse Testing for Desktop Index Page - Test 1](docs/testing/lighthouse/indexdesktop.png) ~
+[Lighthouse Testing for Mobile Index Page - Test 1](docs/testing/lighthouse/indexmobile.png)
+
+Suggestions:
+
+1. serve images in next-gen formats. Lighthouse suggests using image formats such as WebP & AVIF to improve compression and lead to faster downloads and less data consumption. I have now converted the logo and slide images to webp format using Birme.
+
+Final lighthouse testing:
+
+![Final Lighthouse Testing for Desktop Index Page](docs/testing/lighthouse/indexdesktop2.png)
+![Final Lighthouse Testing for Mobile Index Page](docs/testing/lighthouse/indexmobile2.png)
+
+#### Books Page
+
+Initial lighthouse testing:
+[Lighthouse Testing for Desktop Books Page](docs/testing/lighthouse/booksdesktop.png) ~
+[Lighthouse Testing for Mobile Books Page](docs/testing/lighthouse/booksmobile.png)
+
+Suggestions:
+
+1. Serve images in next-gen formats. Lighthouse suggests using image formats such as WebP & AVIF to improve compression and lead to faster downloads and less data consumption. I have converted the book cover images and logo to webp format using Birme.
+
+2. Properly sized images to improve load time.
+
+Final lighthouse testing:
+
+![Final Lighthouse Testing for Desktop Books Page](docs/testing/lighthouse/booksdesktop2.png)
+![Final Lighthouse Testing for Mobile Books Page](docs/testing/lighthouse/booksmobile2.png)
+
+#### Contact Us Page
+
+Initial lighthouse testing:
+[Lighthouse Testing for Desktop Contact Us Page](docs/testing/lighthouse/contactdesktop.png) ~
+[Lighthouse Testing for Mobile Contact Us Page](docs/testing/lighthouse/contactmobile.png)
+
+Suggestions:
+
+1. Serve images in next-gen formats. Lighthouse suggests using image formats such as WebP & AVIF to improve compression and lead to faster downloads and less data consumption. I have converted the logo to webp format using Birme.
+
+2. There is not a sufficient contrast on the small tag underneath the email input. I have targeted the text-muted class and changed the color of the text in order to improve the contrast.
+
+Final lighthouse testing:
+
+![Final Lighthouse Testing for Desktop Contact Us Page ](docs/testing/lighthouse/contactdesktop2.png)
+![Final Lighthouse Testing for Mobile Contact Us Page](docs/testing/lighthouse/contactmobile2.png)
+
+#### Thank You Page
+
+Initial lighthouse testing:
+[Lighthouse Testing for Desktop Thank You Page](docs/testing/lighthouse/thankyoudesktop.png) ~
+[Lighthouse Testing for Mobile Thank You Page](docs/testing/lighthouse/thankyoumobile.png)
+
+Suggestions:
+
+1. Serve images in next-gen formats. Lighthouse suggests using image formats such as WebP & AVIF to improve compression and lead to faster downloads and less data consumption. I have converted the logo to webp format using Birme.
+  
+Final lighthouse testing:
+
+![Final Lighthouse Testing for Desktop Thank You Page](docs/testing/lighthouse/thankyoudesktop2.png)
+![Final Lighthouse Testing for Mobile Thank You Page](docs/testing/lighthouse/thankyoumobile2.png)
+
+#### 404 Page
+
+Lighthouse testing:
+
+![Lighthouse Testing for Desktop 404 Error Page](docs/testing/lighthouse/404desktop.png)
+![Lighthouse Testing for Moblie 404 Error Page](docs/testing/lighthouse/404mobile.png)
+
+### Full Testing
+
+To fully test my website I performed the following testing using a number of browsers (google chrome, safari, mozilla firefox) and devices (Macbook Pro 14 inch, iPhone 13 pro).
+
+I also went through each page using google chrome developer tools to ensure that they responsive on all different screen sizes.
+
+Links.
+
+1. Test each link on the index page. Each link worked as expected, and any links leading to external pages opened correctly in a seperate browser tab.
+2. Test each link on the books page. Each link worked as expected, and any links leading to external pages opened correctly in a seperate browser tab.
+3. Test each link on the contact us page. Each link worked as expected, and any links leading to external pages opened correctly in a seperate browser tab.
+4. Test each link on the thank you page. Each link worked as expected, and any links leading to external pages opened correctly in a seperate browser tab.
+5. Test each link on the 404 page. Each link worked as expected, and any links leading to external pages opened correctly in a seperate tab.
+
+Contact Us Form.
+
+1. Test the contact us form. I tried to submit the form without filling in any input fields. The form worked correctly and directed users to fill in the name field. I then filled in the name field and tried to submit the form. Again the form worked correctly and directed the user to fill out the email field. I filled out the name and email forms and tried to submit the form. The form worked correctly and asked the user to fill in the textarea field. I filled out the name, email and textarea field and tried to submit the form. The form then opens the thank you page in the same browser window.
+2. I tried to submit the form with only an email address - the form directs the user to fill in the name field. I filled out the name and email fields and tried to submit the form. The form then directs the user to fill out the textarea field. I filled in the name, email and textarea field and submitted the form. The form then opens the thank you page in the same browser window.
+3. I tried to submit the form with just the instagram username field filled in and the form directed me to fill in the name field. I filled in the name and instagram username fields and tried again to submit. The form asks the user to fill in the email field. I filled in the name, instagram username and email field and tried to submit. The form asks the user to fill in the textarea field. I filled out the name, instagram username, email and textarea fields and submitted the form. the form then opens the thank you page in the same browser window.
+4. I tried to submit the form with only the textarea field filled in. The form directs the user to fill in the name field. I filled in the name and textarea field and submitted the form. The form directs the user to fill in the email field. I filled in the name, email and textarea fields and submitted the form. The form then opens the thank you page in the same browser window.
+5. I selected one of the checkboxes and tried to submit the form. The form directs me to fill in the name field. I filled in the name field and the form directs the user to fill in the email field. I filled in the name and email fields and tried to submit the form. The form directs the user to fill in the textarea field. Once I filled in the name, email and textarea fields with a checkbox selected the form then opens the thank you page in the same browser window.
+6. I tried submitting the form without any information filled in. The form directs the user to fill in the name field. It then goes on to ask the user to complete the email and textarea fields if they are not filled out. The form can then be submitted and will open the thank you page in the same browser window.
+
+- - -
+
+## Credits
+
+### Code Used
+
+* [Abi Harrison's Meta Tags webinar and repository](https://github.com/Abibubble/meta-tags-example)
+* [Tutorial to change bullet images to emojis](https://daily-dev-tips.com/posts/css-emoji-list-style/)
+* [Dave Horrocks Copepen for the scroll to top](https://codepen.io/daveyjh/pen/GRMmqOO)
+
+### Content
+
+Content for the website was written by the owner of Bully Book Club and Kera Cudmore.
+
+### Media
+
+#### Book Cover Images
+
+* Each book cover was taken from the publishers website.
+
+2022 Books
+
+[Taste](https://www.simonandschuster.com/books/Taste/Stanley-Tucci/9781982168018)
+
+2021 Books
+
+[A Pinch of Magic](https://www.simonandschuster.co.uk/books/A-Pinch-of-Magic/Michelle-Harrison/A-Pinch-of-Magic-Adventure/9781471124297) ~
+[The Devil Wears Prada](https://harpercollins.co.uk/products/the-devil-wears-prada-loved-the-movie-read-the-book-lauren-weisberger?variant=32555806359630) ~
+[A Discovery of Witches](https://www.penguinrandomhouse.com/books/307548/a-discovery-of-witches-movie-tie-in-by-deborah-harkness/) ~
+[The Southern Book Clubs Guide to Slaying Vampires](https://www.penguinrandomhouse.com/books/608677/the-southern-book-clubs-guide-to-slaying-vampires-by-grady-hendrix/) ~
+[The Last Thing He Told Me](https://www.simonandschuster.com/books/The-Last-Thing-He-Told-Me/Laura-Dave/9781501171345) ~
+[A Good Girls Guide to Murder](www.penguinrandomhouse.com/books/607351/a-good-girls-guide-to-murder-by-holly-jackson/) ~
+[The Other Black Girl](https://www.bloomsbury.com/uk/other-black-girl-9781526630377/) ~
+[The Thursday Murder Club](https://www.penguin.co.uk/books/315/315815/the-thursday-murder-club/9780241988268.html) ~
+[The Underground Railway](https://www.hachette.co.uk/titles/colson-whitehead/the-underground-railroad/9780708898406/) ~
+[Bridgerton The Duke and I](https://www.harpercollins.com/products/the-duke-and-i-julia-quinn?variant=33097598468130) ~
+[The Shadow of the Wind](https://www.penguinrandomhouse.com/books/292766/the-shadow-of-the-wind-by-carlos-ruiz-zafon/) ~
+[My Sister the Serial Killer](https://www.penguinrandomhouse.com/books/588860/my-sister-the-serial-killer-by-oyinkan-braithwaite/) ~
+[The Midnight Library](https://www.penguinrandomhouse.com/books/575653/the-midnight-library-by-matt-haig/) ~
+
+2020 Books
+
+[Nevermore](https://www.hachette.co.uk/titles/jessica-townsend/nevermoor/9781510104112/) ~
+[Good Omens](https://www.harpercollins.com/products/good-omens-neil-gaimanterry-pratchett?variant=32179607535650) ~
+[Starfell](https://harpercollins.co.uk/products/starfell-willow-moss-and-the-lost-day-starfell-book-1-dominique-valente?variant=32558089175118) ~
+[Circe](https://www.littlebrown.com/titles/madeline-miller/circe/9780316556347/) ~
+[Luckiest Girl Alive](https://www.simonandschuster.com/books/Luckiest-Girl-Alive/Jessica-Knoll/9781476789644) ~
+[Ballard of Songbirds & Snakes](https://shop.scholastic.com/parent-ecommerce/books/the-ballad-of-songbirds-and-snakes-a-hunger-games-novel-9781338635171.html) ~
+[The Martian](https://www.penguinrandomhouse.com/books/234102/the-martian-by-andy-weir/) ~
+[Queenie](https://www.simonandschuster.com/books/Queenie/Candice-Carty-Williams/9781501196027#:~:text=Queenie%20%7C%20Book%20by%20Candice%20Carty,Official%20Publisher%20Page%20%7C%20Simon%20%26%20Schuster) ~
+[Born a Crime](https://www.penguinrandomhouse.com/books/537515/born-a-crime-by-trevor-noah/) ~
+[The Hunting Party](https://www.harpercollins.com/products/the-hunting-party-lucy-foley?variant=32205604978722https://www.harpercollins.com/products/the-hunting-party-lucy-foley?variant=32205604978722) ~
+[Boy at the Back of the Class](https://www.penguinrandomhouse.com/books/602100/the-boy-at-the-back-of-the-class-by-onjali-q-rauf/) ~
+[This is going to Hurt](https://www.panmacmillan.com/authors/adam-kay/this-is-going-to-hurt/9781509858613) ~
+
+2019 Books
+
+[Hercule Poirot Christmas](https://harpercollins.co.uk/products/hercule-poirots-christmas-agatha-christie?variant=32553530556494) ~
+[Crazy Rich Asians](https://www.penguinrandomhouse.com/books/222866/crazy-rich-asians-movie-tie-in-edition-by-kevin-kwan/) ~
+[Little Darlings](https://harpercollins.co.uk/products/little-darlings-melanie-golding?variant=32546601893966) ~
+
+#### Other Images
+
+* Bully Book Club Logo - with permission from Yasmin Daly, Creator of Bully Book Club.
+
+* All images used in the carousel on the index page are photos of Bully Book Club members who kindly gave their permission for them to be used in this project.
+  * [Slide 1](https://www.instagram.com/harrisonfordbulldog/?hl=en)
+  * [Slide 2](https://www.instagram.com/gozerandvigo/?hl=en)
+  * [Slide 3](https://www.instagram.com/chubbspetersonthebulldog/?hl=en)
+  * [Slide 4 & 6](https://www.instagram.com/basicallybusterspage/?hl=en)
+  * [Slide 5](https://www.instagram.com/bookswithbubba/?hl=en)
+
+* Illustration of Harrison Ford used on the thank you page - with kind permission from [Harrison Ford](https://www.instagram.com/harrisonfordbulldog/)
+
+* Image of Milkshake the Bulldog used on the 404 page used with kind permission from [Sir Meatball and Milkshake](https://www.instagram.com/sir.meatball/?hl=en)
+
+### Acknowledgments
+
+I would like to acknowledge the following people who helped me along the way in completing my first milestone project:
+
+* Yasmin Daly, Creator of Bully Book Club, for allowing me to create a website based on the book club.
+* [Adegbenga Adeye](https://github.com/deye9), my Code Institute Mentor.
+* [Abi Harrison](https://github.com/Abibubble) - For her webinar on meta tags, and taking the time to respond to my peer code review request in slack.
+* [Simen Daehlin](https://github.com/Eventyret) - For his help with the columns issue, and for taking the time to respond to my peer code review request in slack.
+* [Dave Horrocks](https://github.com/daveyjh) - For his help with the textarea required issue & the return to top on books page.
+* [Anthony O'Brien](https://github.com/auxfuse) - For pointing out my missing join us container on the index page & helping me solve the issue of the thank you page overflow.
+* [Andrew Dempsey](https://github.com/andrewdempsey2018) - For taking the time to respond to my peer code review request in slack.
