@@ -278,12 +278,15 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | Secure Checkout button | Redirects user to secure checkout | Click button | Redirects user to secure checkout | Pass |
 | `Secure Checkout Page` |
 | Name textfield | Activates required textfield | Click field | Activates required textfield | Pass |
+| Email textfield | Activates required textfield | Click field | Activates required textfield | Pass |
+| Phone number textfield | Activates required textfield | Click field | Activates required textfield | Pass |
 | Country dropdown menu | Activates required dropdown menu | Click button | Activates required dropdown menu | Pass |
 | Postal Code textfield | Activates required textfield | Click field | Activates required textfield | Pass |
 | Town or City textfield | Activates required textfield | Click field | Activates required textfield | Pass |
 | Street Address 1 textfield | Activates required textfield | Click field | Activates required textfield | Pass |
 | Street Address 2 textfield | Activates textfield | Click field | Activates textfield | Pass |
 | County, State or Locality textfield | Activates textfield | Click field | Activates textfield | Pass |
+| Radio button | Fills out box | Click radio button | Fills out box | Pass |
 | Strip payment textfield | Activates required payment field | Click field | Activates required payment field | Pass |
 | Adjust Bag button | Redirects user to the shopping bag | Click button | Redirects user to the shopping bag | Pass |
 | Complete Order button | Redirects user to chackout success page | Click button | Redirects user to chackout success page | Pass |
@@ -296,7 +299,7 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | `Footer` |
 | Facebook link | Redirects user our Facebook account in a new window | Click link | Redirects user our Facebook account in a new window | Pass |
 | Instagram link | Redirects user our Instagram account in a new window | Click link | Redirects user our Instagram account in a new window | Pass |
-| Subsribe link | Redirects user our subscribe page in a new window | Click link | Redirects user our subscribe page in a new window | Pass |
+| Subsribe link | Redirects user our subscribe page | Click link | Redirects user our subscribe page | Pass |
 
 
 Back to [README.md](README.md)
