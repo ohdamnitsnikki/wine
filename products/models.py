@@ -40,28 +40,3 @@ class Product(models.Model):
 
     def number_of_likes(self):
         return self.likes.count()
-
-
-class ProductReview(models.Model):
-    """
-    Product Review Model
-    """
-
-    class Meta:
-        ordering = ['-date_added']
-
-    product = models.ForeignKey(Product,
-                                related_name='reviews',
-                                null=True,
-                                blank=True,
-                                on_delete=models.SET_NULL)
-    user = models.ForeignKey(User,
-                             null=True,
-                             blank=True,
-                             on_delete=models.CASCADE)
-    title = models.CharField(max_length=254)
-    content = models.TextField()
-    date_added = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.title
