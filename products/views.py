@@ -81,11 +81,16 @@ class ProductLike(View):
 
 def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
-    context = {'product': product}
-
     liked = False
-    if product.likes.filter(id=request.user.id).exists():
-        liked = True
+
+    if request.user.is_authenticated:
+        if product.likes.filter(id=request.user.id).exists():
+            liked = True
+
+    context = {
+        'product': product,
+        'liked': liked
+    }
 
     return render(request, 'products/product_detail.html', context)
 

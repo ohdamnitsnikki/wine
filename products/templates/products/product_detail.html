@@ -44,31 +44,31 @@
                     {% endif %}
                     <small>
                         {% if user.is_authenticated %}
-                        <form class="text-muted" action="{% url 'product_like' product.id %}" method="POST">
+                            <form class="text-muted" action="{% url 'product_like' product.id %}" method="POST">
                             {% csrf_token %}
-                            <div style="display: flex; align-items: center;">
-                                <button type="submit" name="product.id" value="{{ product.id }}">
-                                    {% if liked %}
-                                        <i class="fa-solid fa-heart"></i>
-                                    {% else %}
-                                        <i class="fa-duotone fa-heart"></i>
-                                    {% endif %}
-                                </button>
-                                <small class="text-muted" style="margin-left: 5px;">{{ product.number_of_likes }}</small>
-                            </div>
-                        </form>
-                    {% else %}
-                    <p>
-                    <small class="text-muted">
-                        {% if liked %}
-                            <i class="fa-solid fa-heart"></i>
+                                <div style="display: flex; align-items: center;">
+                                    <button type="submit" name="product.id" value="{{ product.id }}">
+                                        {% if liked %}
+                                            <i class="fa-solid fa-heart"></i>
+                                        {% else %}
+                                            <i class="fa-regular fa-heart"></i>
+                                        {% endif %}
+                                    </button>
+                                    <small class="text-muted" style="margin-left: 5px;">{{ product.number_of_likes }}</small>
+                                </div>
+                            </form>
                         {% else %}
-                            <i class="far fa-heart"></i>
+                        <p>
+                            <small class="text-muted">
+                                {% if liked %}
+                                    <i class="fa-solid fa-heart"></i>
+                                {% else %}
+                                    <i class="fa-regular fa-heart"></i>
+                                {% endif %}
+                                {{ product.number_of_likes }}
+                            </small>
+                        </p>
                         {% endif %}
-                        {{ product.number_of_likes }}
-                    </small>
-                </p>
-                    {% endif %}
                     </small>
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
