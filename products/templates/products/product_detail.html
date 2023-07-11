@@ -58,7 +58,16 @@
                             </div>
                         </form>
                     {% else %}
-                        <small class="text-muted"><i class="far fa-heart"></i></small>
+                    <p>
+                    <small class="text-muted">
+                        {% if liked %}
+                            <i class="fa-solid fa-heart"></i>
+                        {% else %}
+                            <i class="far fa-heart"></i>
+                        {% endif %}
+                        {{ product.number_of_likes }}
+                    </small>
+                </p>
                     {% endif %}
                     </small>
                     {% if request.user.is_superuser %}
