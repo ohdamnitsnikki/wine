@@ -46,13 +46,16 @@
                         {% if user.is_authenticated %}
                         <form class="text-muted" action="{% url 'product_like' product.id %}" method="POST">
                             {% csrf_token %}
-                            <button type="submit" name="product.id" value="{{ product.id }}">
-                                {% if liked %}
-                                    <i class="fa-solid fa-heart"></i><small class="text-muted">{{ product.number_of_likes }}</small>
-                                {% else %}
-                                    <i class="fa-duotone fa-heart"></i><small class="text-muted">{{ product.number_of_likes }}</small>
-                                {% endif %}
-                            </button>
+                            <div style="display: flex; align-items: center;">
+                                <button type="submit" name="product.id" value="{{ product.id }}">
+                                    {% if liked %}
+                                        <i class="fa-solid fa-heart"></i>
+                                    {% else %}
+                                        <i class="fa-duotone fa-heart"></i>
+                                    {% endif %}
+                                </button>
+                                <small class="text-muted" style="margin-left: 5px;">{{ product.number_of_likes }}</small>
+                            </div>
                         </form>
                     {% else %}
                         <small class="text-muted"><i class="far fa-heart"></i></small>
