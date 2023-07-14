@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-    'wine-oclock-d9434a8420f0.herokuapp.com', '8000-ohdamnitsnikki-wine-tg6nppvxgpf.ws-eu101.gitpod.io',
+    'wine-oclock-d9434a8420f0.herokuapp.com', (
+        '8000-ohdamnitsnikki-wine-tg6nppvxgpf.ws-eu101.gitpod.io'),
     'localhost'
 ]
 
@@ -145,7 +146,8 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'),
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
@@ -154,7 +156,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': ('django.contrib.auth.password_validation.NumericPasswordValidator'),
+        'NAME': (
+            'django.contrib.auth.password_validation.NumericPasswordValidator'),
     },
 ]
 
