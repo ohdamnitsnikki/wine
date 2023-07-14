@@ -460,3 +460,13 @@ form label {
 
 
 
+@media (max-width: 500px) {
+    t.shopping-bag {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .shopping-info {
+      flex-basis: 50%;
+    }
+  }
