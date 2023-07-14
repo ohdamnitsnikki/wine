@@ -459,9 +459,9 @@ form label {
 }
 
 
-
+/* fix shoppingbag for small screens */
 @media (max-width: 500px) {
-    t.shopping-bag {
+    .shopping-content {
       display: flex;
       flex-wrap: wrap;
     }
