@@ -321,7 +321,7 @@ The W3C validator was used to validate the HTML on all pages of the website. It 
 
 ### Known Bugs
 
-1. Users are able to submit the contact us form without selecting any of the checkboxes. I would have preferred it so that at least one checkbox was selected before the form could be submitted, however when researching this problem I was unable to find a way to achieve this without the use of javascript. I asked on slack whether there was a way to achieve this, it was suggested that I could change the checkboxes to radios, however I wanted users to be able to select more than one option if they needed so this solution wouldn't work. The community confirmed that they only way they could think on to achieve this with checkboxes would be through the use of javascript and change listeners on the checkboxes. As I do not have any experience so far with javascript this is something I am currently unable to implement, but would like to add to the website in a future update.
+1. When filling out the form to make a purchase, some of the fields are required in order to proceed. Although the field accepts blank spaces without text as valid for submitting the form, submitting the form with blank spaces will result in a 404 error, and the purchase won't go through. The payment form using Stripe is adapted from the walkthrough project "Boutique Ado," and as long as the user fills out the form with text, it works correctly.
 
 ### Testing User Stories
 

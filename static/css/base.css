@@ -475,8 +475,8 @@ form label {
   }
 
 /* Hide all columns except 'Product Info' */
-  .other-column, .price, .quantity, .subtotal {
-    display: none;
-}
+    .hide-on-mobile {
+        display: none;
+    }
 
 }
