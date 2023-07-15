@@ -2,3 +2,4 @@ User-agent: *
 Crawl-delay: 10
 Disallow: /checkout/
 Disallow: /profiles/
+Sitemap: https://wine-oclock-d9434a8420f0.herokuapp.com/sitemap.xml
