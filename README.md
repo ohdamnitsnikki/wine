@@ -188,7 +188,7 @@ I have been mindful during coding to ensure that the website is as accessible fr
 
 ### Languages Used
 
-HTML and CSS were used to create this website.
+HTML, JavaScript, Python and CSS were used to create this website.
 
 ### Frameworks, Libraries & Programs Used
 
@@ -198,7 +198,15 @@ Git - For version control.
 
 Github - To save and store the files for the website.
 
-Bootstrap Version 4.6 - The framework for the website. Code for the navigation bar, carousel, cards and form were used and modified. Additional CSS styling was also implemented in style.css.
+Bootstrap - Framework and features on the app like the view and dropdown menus.
+
+Stripe - To make payments possible.
+
+Heroku - Deploy of application.
+
+Elephant SQL - For managing PostgresSQL databases.
+
+AWS.Amazon - Used to store data.
 
 Google Fonts - To import the fonts used on the website.
 
@@ -206,15 +214,15 @@ Font Awesome - For the iconography on the website.
 
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 
-[Tiny PNG](https://tinypng.com/) To compress images.
-
-[Birme](https://www.birme.net/) To resize images and change to webp format.
-
 [Favicon.io](https://favicon.io/) To create favicon.
 
 [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
-[Shields.io](https://shields.io/) To add badges to the README
+### Rendering trafic by keywords
+
+To drive traffic to the application, I've reused a lot of expressions throughout the website. In the product descriptions, the same flowers, fruits, and fragrances are mentioned to give higher ratings when searching for wine in the search engine.
+
+Besides the description, the app has a catchy name, "Wine O'clock." It's inspired by the phrase "It's happy hour somewhere." The main goal with the name was to find an expression that sticks in people's minds and can also be discovered "by accident," thereby generating traffic. To finish it up, there's also a slogan: "Wine a little, laugh a lot," designed to attract people with humor.
 
 - - -
 
@@ -222,31 +230,40 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 ### Deployment
 
-Github Pages was used to deploy the live website. The instructions to achieve this are below:
+Heroku was used for deployment and here are the steps for deploying.
 
-1. Log in (or sign up) to Github.
-2. Find the repository for this project, Bully-Book-Club.
-3. Click on the Settings link.
-4. Click on the Pages link in the left hand side navigation bar.
-5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
-6. Click Save. Your live Github Pages site is now deployed at the URL shown.
+1. Sign up for a Heroku account: Go to the [Heroku website](https://www.heroku.com) and create a new account if you don't already have one.
+
+2. Install the Heroku CLI: Download and install the Heroku Command Line Interface (CLI) tool for your operating system. The CLI allows you to interact with Heroku from the command line.
+
+3. Prepare your app for deployment: Make sure your app is ready for deployment by ensuring all necessary dependencies and configuration files are in place. This includes setting up a Procfile that specifies how to run your app a requirements.txt file and also a env file.
+
+4. Initialize a Git repository: If your app is not already using Git for version control, initialize a new Git repository in the root directory of your app.
+
+5. Log in to Heroku from the CLI: Open a terminal or command prompt, and log in to Heroku by running the command heroku login. Follow the prompts to enter your Heroku account credentials.
+
+6. Push your code to Heroku: Use the command git push heroku main to deploy your code to Heroku. This will upload your app's code and dependencies to Heroku's servers.
+
+7. Set up environment variables (optional): If your app relies on environment variables for configuration, you can set them using the Heroku CLI. Run heroku config:set VARIABLE_NAME=variable_value for each environment variable you need to set.
+
+Open your app in the browser: Go to setting in Heroku and you'll find a link to your page to see your deployed app there.
 
 ### Local Development
 
 #### How to Fork
 
-To fork the Bully-Book-Club repository:
+To fork the Wine O'clock repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, kera-cudmore/Bully-Book-Club.
+2. Go to the repository for this project, ohdamnitsnikki/Wine O'clock.
 3. Click the Fork button in the top right corner.
 
 #### How to Clone
 
-To clone the Bully-Book-Club repository:
+To clone the Wine O'clock repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, kera-cudmore/Bully-Book-Club.
+2. Go to the repository for this project, ohdamnitsnikki/Wine O'clock.
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
