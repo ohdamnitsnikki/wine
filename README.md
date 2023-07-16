@@ -1,16 +1,16 @@
 # Wine O'Clock Website
 
-The Wine O'clock Website is a e-commerce site where users can buy wine.
+The Wine O'clock website is an e-commerce site where users can buy wine. Besides buying wine, they can also learn more about the products in stock as they all have detailed descriptions. Wine O'Clock is mainly targeted towards an older audience since it contains alcohol, but anyone of legal drinking age is able to enjoy the carefully selected products. Our business model aims to maintain exclusivity for both the wines and our customers.
 
-![Wine O'Clock Website shown on a range of devices](assets/images/bullybookclubwebsite.png)
+What does that mean for us and the customers? Well, it means that we never have more than 100 products on our page at a time. We always offer a variety of bottles from each region and in different colors to cater to a wider audience. Additionally, since we have fewer products compared to our competitors, we can purchase larger quantities of each bottle, resulting in lower prices for everyone.
+
+We want everyone to be able to enjoy exceptional wine!
+
+We also use socialmedia to render a bigger audince. Moslty we use our Facebook page.
+
+![We also use socialmedia to render a bigger audience. Moslty we use our Facebook page.](media/facebookpage.png)
 
 [View Wine O'Clock on Heroku Pages](https://wine-oclock-d9434a8420f0.herokuapp.com/)
-
-![GitHub last commit](https://img.shields.io/github/last-commit/kera-cudmore/bully-book-club?color=red)
-![GitHub contributors](https://img.shields.io/github/contributors/kera-cudmore/bully-book-club?color=orange)
-![GitHub language count](https://img.shields.io/github/languages/count/kera-cudmore/bully-book-club?color=yellow)
-![GitHub top language](https://img.shields.io/github/languages/top/kera-cudmore/bully-book-club?color=green)
-![W3C Validation](https://img.shields.io/w3c-validation/html?color=blueviolet&targetUrl=https%3A%2F%2Fkera-cudmore.github.io%2FBully-Book-Club)
 
 ## CONTENTS
 
@@ -20,7 +20,6 @@ The Wine O'clock Website is a e-commerce site where users can buy wine.
 
 * [Design](#Design)
   * [Colour Scheme](#Colour-Scheme)
-  * [Typography](#Typography)
   * [Imagery](#Imagery)
   * [Wireframes](#Wireframes)
   * [Features](#Features)
@@ -60,41 +59,42 @@ The Wine O'clock Website is a e-commerce site where users can buy wine.
 
 ### Initial Discussion
 
-Bully Book Club is an online book club that reviews a book once a month on Instagram. Members post a photo of the book with their bulldog with a review and use hashtags to drive up the visibility of the chosen book, author and publisher on that day.
+The owners of Wine O'Clock spend a lot of time searching for the best wines from around the globe to offer their customers an amazing selection. They value their regular customers and aim to constantly have a wide range of wines available. To provide exceptional service, Wine O'Clock is always open, regardless of the customer's location. This means that no matter where you are in the world, Wine O'Clock is ready to serve you.
 
-Due to a recent growth in membership and personal commitments, the owner of bully book club is spending a large amount of time answering questions from users asking what the book club is reading and how to participate.
+The company also assists newer wine enthusiasts by offering a curated selection of wines specifically chosen to pair well with different types of foods. This category allows customers to easily find wines that complement specific dishes.
 
 #### Key information for the site
 
-* What is the current months book.
-* What are the next books.
-* How to become a member and take part.
-* A way for people to contact the book club with questions and recommendations.
-* Updates on what is coming to the book club in 2022.
+* Exclusive wines from around the globe.
+* A wine selection tailored to complement different types of cuisine.
+* A subscription form for members to stay updated on new wines.
+* The ability for logged-in users to "like" products, showcasing their popularity to others.
+* Links to our social media pages.
+* An order history for users to easily review their past purchases.
 
 ### User Stories
 
-#### Client Goals
+#### Client GoalsHere are the revised descriptions:
 
-* To be able to view the site on a range of device sizes.
-* To make it easy for potential members to find out what the book club is and how to take part.
-* To make it clear for members to see what we are currently reading and what is coming up next.
-* To allow people to be able to contact the Book Club to ask further questions or with book recommendations etc.
+#### User Goals
 
-#### First Time Visitor Goals
+* To have a responsive shopping site that works well on various device sizes.
+* To easily create an account and make purchases.
+* To have the option to save account information for convenience during future purchases.
+* To be able to search for products using a search bar or browse through categories.
+* To add and remove products from the shopping bag.
+* To "like" products of interest.
+* To view pictures of the products.
+* To read detailed information about each product.
+* To register, log in, and log out with ease.
+* To have a one-click option to scroll back up on the page.
+* To view the entire available stock of products.
 
-* I want to find out what is Bully Book Club and how I can take part.
-* I want to be able to navigate the site easily to find information.
-* I want to be able to find their Instagram profile.
+#### Admin Goals
 
-#### Returning Visitor Goals
-
-* I want to find up to date information on what the book club is reading.
-* I want to be able to easily contact the book club with questions I might have.
-
-#### Frequent Visitor Goals
-
-* I want to be able to recommend a book for the book club to read.
+* To easily manage and modify products by editing, adding, or deleting them.
+* To view customer orders and product likes.
+* To receive user feedback and tips regarding new products.
 
 - - -
 
@@ -102,33 +102,27 @@ Due to a recent growth in membership and personal commitments, the owner of bull
 
 ### Colour Scheme
 
-![Bully Book Club Website Colour Palette](docs/colourpalette.png)
-
-The website uses a palette of pastel colours that are often used in the Bully Book Club logo images. The colour palette was created using the [Coolors](https://coolors.co/) website.
-
-### Typography
-
-Google Fonts was used for the following fonts:
-
-* Merriweather is used for headings on the site. It is a serif font.
-
-* Raleway is used for the body text on the site. It is a sans-serif font.  
-
-* Indie Flower is used on the thank you page for Harrison Fords message. It is a cursive font.
+Wine O'Clock utilizes a variety of colors to enhance the page, including the vibrant hues found in the products and the scenic backgrounds of vineyards. To ensure that the focus remains on the products themselves, we have chosen to incorporate predominantly white and pale yellow tones, allowing the products to take center stage without distractions.
 
 ### Imagery
 
-The member images were used with the permission of their owners. All book covers were taken from the publishers websites. I have credited these in the [credits](#Credits) section.
+All images of the product are taken from [Vivino](https://www.vivino.com/SE/en/) and in the json file each products also renders the specific file.
 
 ### Wireframes
 
 Wireframes were created for mobile, tablet and desktop.
 
-[Home Page Wireframe](docs/wireframes/indexwireframe.png)
+[Home Page Wireframe](media/index_page.png)
 
-[Books Wireframe](docs/wireframes/bookswireframe.png)
+[Products Wireframe](media/product_page.png)
 
-[Contact Us Wireframe](docs/wireframes/contactuswireframe.png)
+[Products Description Wireframe](media/description_page.png)
+
+[Shopping Bag Wireframe](media/bag_page.png)
+
+[Checkout Wireframe](media/checkout_page.png)
+
+[Contact Us Wireframe](media/contact_page.png)
 
 ### Features
 
