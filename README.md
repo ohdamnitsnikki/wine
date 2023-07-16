@@ -126,45 +126,58 @@ Wireframes were created for mobile, tablet and desktop.
 
 ### Features
 
-The website is comprised of four pages, three of which are accessible from the navigation menu (home page, books page & contact us page). The fourth page is a thank you page which is shown once a user submits the form on the contact us page.
+This e-commerce site consists of ten pages, each serving a specific purpose to fulfill its intended potential.
 
-* All Pages on the website have:
+1. The Start Page: This is the initial page users encounter upon entering the application.
+2. Product Listing Page: Displays all the products available in stock.
+3. Shopping Bag: Allows users to view and manage the items they have added for purchase.
+4. Checkout Page: Facilitates the order payment and finalization process.
+5. My Profile Page: Provides a record of past orders made by the user and users infomraation
+6. Contact Us Page: Offers a means for users to get in touch with the site's administrators.
+7. Subscribe Page: Enables users to subscribe to receive updates or newsletters.
+8. Register Page: Allows new users to create an account on the site.
+9. Login Page: Provides a secure login interface for registered users to access their accounts.
+10. Logout Page: Allows users to safely log out and end their current session.
 
-  * A responsive navigation bar at the top which allows the user to navigate through the site.  To the left of the navigation bar is an image of book clubs logo together with the text Bully Book Club. To the right of the navigation bar are the links to the websites pages (home, books, and contact us). To allow a good user experience of the site, the Bully Book Club text is hidden with a media query on mobile devices to prevent the navigation bar looking cluttered. When viewing with mobile devices the navigation links change to a burger toggler. This was implemented to give the site a clean look and to promote a good user experience, as users are used to seeing the burger icon when on mobile devices to navigate a site.
+These ten pages work together to provide a comprehensive and seamless e-commerce experience for the site's visitors.
 
-  * A footer which contains social media icon links to instagram and goodreads. There is also an envelope icon which takes the user to the contact us page. Icons were used to keep the footer clean and because they are universally recognisable.
+* All pages on the website have:
+  * A responsive navigation menu that works on all screen sizes. It gives users the ability to search for products by character in the search bar or by category in the dropdown menus. There's a menu to register for the page, log in, log out, subscribe, and contact us. The options render depending on whether the user is logged in or not. Additionally, the logo of the page takes you back to the start page, and there is a bag icon that takes the user to their shopping bag with the selected products.
+  * A footer that contains social media icon links to Instagram and Facebook.
 
-* Home Page.
-  * Carousel Section.
-  The carousel shows photographs of the members of Bully Book Club.
-  * About Us Section.
-  This section is broken down into four subsections and gives users some information on the book club. On large screens the subsections are laid out in a row, however on mobile devices the subsections are stacked vertically.
-  * Join Us Section.
-  This section gives the user more information on how they can join in with the book club.
+* Home Page:
+  * Contains an image of a vineyard to show the user that this e-commerce site is all about grapes of different colors. Besides the background image, we also have our slogan, "Wine a little, Laugh a lot!" and a "Shop Now" button to our products page with effects to make it more exciting.
 
-* Books Page. The navigation link for books is a drop down menu with the following sections:
-  * Currently Reading.
-  This takes the user to the card of the book the book club is currently reading.
-  * Reading Next.
-  This takes the user to the card of the book the book club will be reading next.
-  * Yearly Sections.
-  This takes the user to the section of the year they have chosen. There are currently 3 years to select from.
-  The books page implements a return to top icon which allows users to return to the navigation menu easily from any point as they scroll down the page.
+* Register Page:
+  * New customers can easily register for the page.
+  * Returning customers can easily sign in.
+  * Signed-in users can easily sign out.
 
-* Contact Us Page.
-  * A List of reasons users may want to contact the book club.
-  * Form
-  The form contains fields for the users name, email address, instagram handle, checkboxes giving a reason for contact and a text area for the user to add further information. The user submits the form using the submit button. Users must fill in the name, email and text area fields to be able to submit the form. If they don't a tooltip will guide them to fill in any information they have missed.
+* Products Page: On the Products page, the user can either click the wine bottle or the like button to open the product.
+  * If the user presses the like button (only if the user is logged in), it will render a like on the product visible to other users. It also opens the description for the product.
+  * If users click the bottle, it opens the product's description.
+  * From the product description, the user can add the product to the bag, like or unlike the product, and open the image in a new window.
+  * On the products page, users have the option to use an up arrow to go back to the top of the page.
 
-* Thank You Page.
-  * A message thanks the user for submitting the form and lets them know someone will be in touch soon.
-  * Image and message from Harrison Ford, Dictator of the Bully Bookclub.
+* Shopping Bag Page:
+  * Customers can easily add, change, and delete products in their bag.
+  * Users can use a "Keep Shopping" button to go back to the products page.
+  * Users can go to the secure checkout page to proceed with the order.
 
-* Future Implementations.
-  * Use javascript to perform return to top function on books page.
-  * Use javascript and listeners to require at least one checkbox to be checked before submitting the form on contact us page.
-  * A meet the members page - This would have a photo of the member together with a small bio. A link to their instagram and/or goodreads page.
-  * Competitions/giveaways page - This page would give further information/rules on the competitions and giveaways the book club hosts.
+* Checkout Page:
+  * Users can fill out a form with their billing information and choose to save it for future purchases or not. Users can also change this later under "My Profile," where they can also see their order history.
+
+* Contact Us Page:
+  * Users can send in tips about wines they think we should add to our site using a form. The form asks for a name, country, description, and what dish it pairs with. The form automatically fills in the user's username and email, and when the user submits the message, it ends up in the admin's inbox.
+
+* Subscribe Page:
+  * The Subscribe page is a form that users can fill out to receive news from the site.
+
+* Future Implementations:
+  * I would like to add a live chat where users can interact with each other and give tips about products on the page.
+  * I would like the like buttons to be part of a rating system.
+  * Each product should be possible to review if the user has bought it.
+  * I would like to have a blog page where users can submit pictures of themselves enjoying the products.
 
 ### Accessibility
 
