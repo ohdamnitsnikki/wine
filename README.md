@@ -302,6 +302,11 @@ The W3C validator was used to validate the HTML on all pages of the website. It 
 * [Thank You Page HTML](docs/testing/w3c/w3cthankyou.png)
 * [404 Page HTML](docs/testing/w3c/w3c404.png)
 * [style.css CSS](docs/testing/w3c/w3ccss.png)
+* [Index Page HTML](docs/testing/w3c/w3cindex.png)
+* [Index Page HTML](docs/testing/w3c/w3cindex.png)
+* [Index Page HTML](docs/testing/w3c/w3cindex.png)
+* [Index Page HTML](docs/testing/w3c/w3cindex.png)
+* [Index Page HTML](docs/testing/w3c/w3cindex.png)
 
 ### Solved Bugs
 
