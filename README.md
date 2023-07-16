@@ -4,7 +4,7 @@ The Wine O'clock Website is a e-commerce site where users can buy wine.
 
 ![Wine O'Clock Website shown on a range of devices](assets/images/bullybookclubwebsite.png)
 
-[View Wine O'Clock on Github Pages](https://kera-cudmore.github.io/Bully-Book-Club/)
+[View Wine O'Clock on Heroku Pages](https://wine-oclock-d9434a8420f0.herokuapp.com/)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/kera-cudmore/bully-book-club?color=red)
 ![GitHub contributors](https://img.shields.io/github/contributors/kera-cudmore/bully-book-club?color=orange)
