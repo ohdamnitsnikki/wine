@@ -126,7 +126,7 @@ Wireframes were created for mobile, tablet and desktop.
 
 ### Features
 
-This e-commerce site consists of ten pages, each serving a specific purpose to fulfill its intended potential.
+This e-commerce site consists of eleven pages, each serving a specific purpose to fulfill its inelevended potential.
 
 1. The Start Page: This is the initial page users encounter upon entering the application.
 2. Product Listing Page: Displays all the products available in stock.
@@ -138,8 +138,9 @@ This e-commerce site consists of ten pages, each serving a specific purpose to f
 8. Register Page: Allows new users to create an account on the site.
 9. Login Page: Provides a secure login interface for registered users to access their accounts.
 10. Logout Page: Allows users to safely log out and end their current session.
+11. Description Page: Gives user moe info about the product.
 
-These ten pages work together to provide a comprehensive and seamless e-commerce experience for the site's visitors.
+These eleven pages work together to provide a comprehensive and seamless e-commerce experience for the site's visitors.
 
 * All pages on the website have:
   * A responsive navigation menu that works on all screen sizes. It gives users the ability to search for products by character in the search bar or by category in the dropdown menus. There's a menu to register for the page, log in, log out, subscribe, and contact us. The options render depending on whether the user is logged in or not. Additionally, the logo of the page takes you back to the start page, and there is a bag icon that takes the user to their shopping bag with the selected products.
@@ -298,16 +299,15 @@ Throughout the development process, we iteratively performed these tests, fixing
 The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
 
 * [Index Page HTML](docs/testing/w3c/w3cindex.png)
-* [Books Page HTML](docs/testing/w3c/w3cbooks.png)
-* [Contact Us Page HTML](docs/testing/w3c/w3ccontact.png)
-* [Thank You Page HTML](docs/testing/w3c/w3cthankyou.png)
+* [Product Page HTML](docs/testing/w3c/w3cbooks.png)
+* [Description Page HTML](docs/testing/w3c/w3ccontact.png)
+* [Shopping Bag Page HTML](docs/testing/w3c/w3cthankyou.png)
+* [Checkout HTML](docs/testing/w3c/w3c404.png)
+* [My Profile Page HTML](docs/testing/w3c/w3ccss.png)
+* [Log in, out and register Page HTML](docs/testing/w3c/w3cindex.png)
+* [Subscribe Page HTML](docs/testing/w3c/w3cindex.png)
+* [Contact Us Page HTML](docs/testing/w3c/w3cindex.png)
 * [404 Page HTML](docs/testing/w3c/w3c404.png)
-* [style.css CSS](docs/testing/w3c/w3ccss.png)
-* [Index Page HTML](docs/testing/w3c/w3cindex.png)
-* [Index Page HTML](docs/testing/w3c/w3cindex.png)
-* [Index Page HTML](docs/testing/w3c/w3cindex.png)
-* [Index Page HTML](docs/testing/w3c/w3cindex.png)
-* [Index Page HTML](docs/testing/w3c/w3cindex.png)
 
 ### Solved Bugs
 

@@ -45,8 +45,9 @@
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}
-                    <small>
 
+
+                    <span>
                         <!-- Like button for logged in users-->
                         {% if user.is_authenticated %}
                             <form class="text-muted" action="{% url 'product_like' product.id %}" method="POST">
@@ -63,7 +64,7 @@
                                 </div>
                             </form>
                         {% else %}
-                        <p>
+                        <div>
                             <small class="text-muted">
                                 {% if liked %}
                                     <i class="fa-solid fa-heart"></i>
@@ -72,9 +73,9 @@
                                 {% endif %}
                                 {{ product.number_of_likes }}
                             </small>
-                        </p>
+                        </div>
                         {% endif %}
-                    </small>
+                    </span>
 
                     <!-- Edit and delete button for admin-->
                     {% if request.user.is_superuser %}
@@ -129,12 +130,11 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
-                    </div> 
-                </div>
-                </div>
+                </div> 
             </div>
-        </div>
+            </div>
     </div>
+        
 {% endblock %}
 
 {% block postloadjs %}
