@@ -9,6 +9,7 @@
     </div>
 {% endblock %}
 
+<!-- Products shown after category-->
 {% block content %}
     <div class="overlay"></div>
     <div class="container-fluid">
@@ -23,6 +24,8 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
+
+        <!-- Sort by menu-->
         <div class="row">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
@@ -50,6 +53,8 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- Products info-->
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -84,6 +89,8 @@
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
                                             <small>
+
+                                                <!-- Like button-->
                                                 {% if user.is_authenticated %}
                                                 <form class="text-muted" action="{% url 'product_like' product.id %}" method="POST">
                                                     {% csrf_token %}
@@ -111,6 +118,8 @@
                                             </p>
                                             {% endif %}
                                             </small>
+
+                                            <!-- Edit or delete button for admin-->
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
                                                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 

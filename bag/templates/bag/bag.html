@@ -11,6 +11,7 @@
 {% endblock %}
 
 {% block content %}
+<!-- The shopping bag-->
     <div class="overlay"></div>
     <div class="container mb-2">
         <div class="row">
@@ -21,6 +22,7 @@
             </div>
         </div>
 
+        <!-- Bag items-->
         <div class="row">
             <div class="col">
                 {% if bag_items %}
@@ -38,6 +40,8 @@
 
                             {% for item in bag_items %}
                                 <tr class="shopping-content">
+
+                                    <!-- Porduct img -->
                                     <td class="p-3 w-25 shopping-info">
                                         {% if item.product.image %}
                                         <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
@@ -45,14 +49,20 @@
                                         <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                                         {% endif %}
                                     </td>
+
+                                    <!-- Product name-->
                                     <td class="py-3 shopping-info">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
+
+                                    <!-- Product price-->
                                     <td class="py-3 shopping-info">
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25 shopping-info">
+
+                                        <!-- Adjust bag form-->
                                         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
@@ -80,6 +90,8 @@
                                                 </div>
                                             </div>
                                         </form>
+
+                                        <!-- Adjust bag buttons-->
                                         <a class="update-link text-info"><small>Update</small></a>
                                         <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
@@ -89,6 +101,8 @@
                                 </tr>
                             {% endfor %}
                             <tr>
+
+                                <!-- Show delivery status -->
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
@@ -101,6 +115,8 @@
                                 </td>
                             </tr>
                             <tr>
+
+                                <!-- Buttons to keep shopping or go through with purchase -->
                                 <td colspan="5" class="text-right">
                                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                                         <span class="icon">
@@ -119,6 +135,8 @@
                         </table>
                     </div>
                 {% else %}
+
+                <!-- Bag is empty message-->
                     <p class="lead mb-5">Your bag is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">

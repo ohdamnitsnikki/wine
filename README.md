@@ -178,6 +178,7 @@ These ten pages work together to provide a comprehensive and seamless e-commerce
   * I would like the like buttons to be part of a rating system.
   * Each product should be possible to review if the user has bought it.
   * I would like to have a blog page where users can submit pictures of themselves enjoying the products.
+  * I user isn't logged in a press the heart icon I want it to render a message saying "you have to log in first".
 
 ### Accessibility
 
