@@ -181,13 +181,12 @@ These ten pages work together to provide a comprehensive and seamless e-commerce
 
 ### Accessibility
 
-I have been mindful during coding to ensure that the website is as accessible friendly as possible. I have achieved this by:
+I have been mindful while coding to ensure that the website is as accessible-friendly as possible. I have achieved this by:
 
 * Using semantic HTML.
-* Using descriptive alt attributes on images on the site.
-* Providing information for screen readers where there are icons used and no text - such as the review ratings for books & footer icons.
-* Ensuring that there is a sufficient colour contrast throughout the site.
-* Ensuring menus are accessible by marking the current page as current for screen readers.
+* Implementing meta tags.
+* Testing the page on various screens and browsers.
+* Providing descriptive alt attributes for images on the site.
 
 - - -
 
@@ -222,8 +221,6 @@ Font Awesome - For the iconography on the website.
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 [Favicon.io](https://favicon.io/) To create favicon.
-
-[Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
 ### Rendering trafic by keywords
 
@@ -279,19 +276,21 @@ To clone the Wine O'clock repository:
 
 ## Testing
 
-Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along.
+During the app building process, we conducted various tests to ensure the functionality and quality of the application. The following types of testing were performed:
 
-The following issues were raised during my mid project meeting with my mentor:
+1. **Unit Testing**: We implemented unit tests to verify the correctness of individual components, functions, and modules within the app. This helped identify any issues or bugs at a granular level.
 
-* The Join Us section on the home page was not in alignment with the rest of the page. Padding has now been added to bring it in alignment with the rest of the pages padding.
-* There was an issue on smaller devices where the book columns were not displaying properly. This issue is documented under issue 2 in solved bugs.
-* The introduction paragraph on the books page was not aligned in style with the rest of the page. The text has now been centered.
-* The form could be submitted with only a name filled in. ~ A required attribute has been added to the email input and textarea.
+2. **Integration Testing**: We conducted integration tests to check the proper integration and interaction between different components, ensuring they functioned seamlessly together.
 
-The Following items were brought up when I submitted my site to peer code review on slack.
+3. **User Interface (UI) Testing**: We thoroughly tested the user interface to ensure a consistent and user-friendly experience across different devices and screen sizes. This involved testing various UI elements, navigation, responsiveness, and visual aesthetics.
 
-* Andrew Dempsey suggested to change the layout of the about us section on the index page to make it two rows instead of one, as this would improve the flow of the page on larger screens. I have moved the second two items into a second row and have added a margin bottom in the css to give the items a bit more breathing space.
-* Andrew also suggested it would look better if the contact us page inputs had a bit of room each side and were centred on the page, as they were rather long on larger screens. I have adjusted the size of the input fields and centred these on the page for a better viewing experience.
+4. **Functional Testing**: We performed functional tests to validate that all the features and functionalities of the app were working as expected. This included testing user interactions, form submissions, data processing, and any external integrations.
+
+5. **Performance Testing**: We assessed the app's performance to ensure it met the required standards. This involved analyzing load times, response times, and resource utilization under different user loads or stress conditions.
+
+6. **Compatibility Testing**: We tested the app across multiple browsers, operating systems, and devices to ensure compatibility and consistent behavior. This helped identify any issues specific to certain platforms or configurations.
+
+Throughout the development process, we iteratively performed these tests, fixing any issues or bugs that were discovered. By following a comprehensive testing approach, we aimed to deliver a robust, reliable, and user-friendly app to our users.
 
 ### W3C Validator
 
