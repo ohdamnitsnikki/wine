@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import SubscriptionForm
+from .models import Subscriber
+from django.contrib import messages
 
 
 def subscribe(request):
@@ -8,10 +10,11 @@ def subscribe(request):
         if form.is_valid():
             # Save the form data in the admin
             form_data = form.cleaned_data
-            form.save()
-            return redirect('subscribe/subscribe.html')
+            subscriber = Subscriber.objects.create(
+                username=form_data["username"], email=form_data["email"])
+            subscriber.save()
 
-        messages.success(request, f'You are now a subscriber!')
+        messages.success(request, 'You are now a subscriber!')
 
     else:
         form = SubscriptionForm()

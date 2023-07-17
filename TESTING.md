@@ -61,7 +61,7 @@ However, I'm pleased to share that all the lines written entirely by me, and not
 | As a returning/registered user, I want to be able to have products saved in my shopping bag | Users shopping bag is saved in the shopping bag reached from the navbar | ![Saved Shopping Bag](media/saved_bag.png) |
 | As a returning/registered user, I want to be able to change my billing information | Users can change and add their information under their profile | ![Billing Information](media/update_billing_info.png) |
 | As a returning/registered user, I want to be able to like a product | Users can like a product on the product dettail | ![Like](media/like.png) |
-| As a returning/registered user, I want to be able to subscribe for a newsletter | Users can subscribe for a newsletter | ![Subscribe for a newsletter](media/) |
+| As a returning/registered user, I want to be able to subscribe for a newsletter | Users can subscribe for a newsletter | ![Subscribe for a newsletter](media/subscribe_form.png) |
 | As a returning/registered user, I want to be able to tip about good wines | Users can send in tips to the admin | ![Contact Us](media/tip_form.png) |
 
 
