@@ -48,29 +48,30 @@ However, I'm pleased to share that all the lines written entirely by me, and not
 
 | Goals | How are they achieved? | Image |
 | :--- | :--- | :--- |
-| As a first time user, I want to easily understand the page I'm on | To achieve good UX the page uses animations to lead the user to the purpose of the site | ![Shop now button](documentation/navbar-desktop.png) |
-| As a first time user, I want to easily navigate through out the page | To make a userfriendly page the navbar includes standardized icons | ![Navbar](documentation/navbar-desktop.png) |
-| As a first time user, I want to be able to sign up to the site and create a profile | Users can create their own profile for the site by using the sign up page. Links to the sign up page are included on the navbar, and there is also a button to redirect users to the sign up page on the 404 page if they are not logged into an account on the site | ![sign up link](documentation/testing/signup-user.png) |
-| As a first time user, I want to be able to being able to save my profile information | Users can choose to save their billing information while making their first purchase | ![sign up link](documentation/testing/signup-user.png) |
+| As a first time user, I want to easily understand the page I'm on | To achieve good UX the page uses animations to lead the user to the purpose of the site | ![Shop now button](media/shop_now_button.png) |
+| As a first time user, I want to easily navigate through out the page | To make a userfriendly page the navbar includes standardized icons | ![Navbar](media/navbar.png) |
+| As a first time user, I want to be able to sign up to the site and create a profile | Users can create their own profile for the site by using the sign up page. Links to the sign up page are included on the navbar, and there is also a button to redirect users to the sign up page on the 404 page if they are not logged into an account on the site | ![sign up link](media/register_link.png) |
 
 `Registered/Returning Visitors`
 
 |  Goals | How are they achieved? | Image |
 | :--- | :--- | :--- |
-| As a returning/registered user, I want to be able to log in to my account | The Navbar has a login link | ![Login user link](documentation/testing/login-user.png) |
-| As a returning/registered user, I want to be able to see my history | From the navbar I can access my profile and see my order history | ![Order History](documentation/testing/login-user.png) |
-| As a returning/registered user, I want to be able to have products saved in my shopping bag | Users shopping bag is saved in the shopping bag reached from the navbar | ![Order History](documentation/testing/login-user.png) |
-| As a returning/registered user, I want to be able to change my billing information | Users can change and add their information under their profile | ![Billing Information](documentation/testing/login-user.png) |
-| As a returning/registered user, I want to be able to like a product | Users can like a product on the product dettail | ![Like](documentation/testing/login-user.png) |
-| As a returning/registered user, I want to be able to subscribe for a newsletter | Users can subscribe for a newsletter | ![Subscribe for a newsletter](documentation/testing/login-user.png) |
+| As a returning/registered user, I want to be able to log in to my account | The Navbar has a login link | ![Login user link](media/register_link.png) |
+| As a returning/registered user, I want to be able to see my history | From the navbar I can access my profile and see my order history | ![Order History](media/order_history.pngg) |
+| As a returning/registered user, I want to be able to have products saved in my shopping bag | Users shopping bag is saved in the shopping bag reached from the navbar | ![Saved Shopping Bag](media/saved_bag.png) |
+| As a returning/registered user, I want to be able to change my billing information | Users can change and add their information under their profile | ![Billing Information](media/update_billing_info.png) |
+| As a returning/registered user, I want to be able to like a product | Users can like a product on the product dettail | ![Like](media/like.png) |
+| As a returning/registered user, I want to be able to subscribe for a newsletter | Users can subscribe for a newsletter | ![Subscribe for a newsletter](media/) |
+| As a returning/registered user, I want to be able to tip about good wines | Users can send in tips to the admin | ![Contact Us](media/tip_form.png) |
+
 
 `Admin User`
 
 | Goals | How are they achieved? | Image |
 | :--- | :--- | :--- |
-| As an admin user, I want to be able to add a product | Admin can easily add a product when signed in | ![Add product](documentation/testing/login-user.png) |
-| As an admin user, I want to be able to edit a product | Admin can easily edit a product when signed in | ![Edit product](documentation/testing/login-user.png) |
-| As an admin user, I want to be able to delete a product | Admin can easily delete a product when signed in | ![Delete product](documentation/testing/login-user.png) |
+| As an admin user, I want to be able to add a product | Admin can easily add a product when signed in | ![Add product](media/add_product.png) |
+| As an admin user, I want to be able to edit a product | Admin can easily edit a product when signed in | ![Edit product](media/edit_product.png) |
+| As an admin user, I want to be able to delete a product | Admin can easily delete a product when signed in | ![Delete product](media/delete_product.png) |
 
 - - -
 
