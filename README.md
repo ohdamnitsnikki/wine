@@ -45,8 +45,6 @@ We also use socialmedia to render a bigger audince. Moslty we use our Facebook p
 * [Credits](#Credits)
   * [Code Used](#Code-Used)
   * [Content](#Content)
-  * [Media](#Media)
-  * [Acknowledgments](#Acknowledgments)
 
 - - -
 

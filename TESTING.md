@@ -1,18 +1,14 @@
 # Testing for Wine O'Clock
 
-![Found in Translation site shown on multiple screen sizes](static/images/site-responsive.png)
-
-Visit the deployed site: [Found in Translation](https://foundintranslationsodaci.herokuapp.com/)
+Visit the deployed site: [FWine O'Clock](https://wine-oclock-d9434a8420f0.herokuapp.com/)
 
 - - -
 
 ## CONTENTS
 
 * [AUTOMATED TESTING](#AUTOMATED-TESTING)
-  * [W3C Validator](#W3C-Validator)
   * [JavaScript Validator](#JavaScript-Validator)
   * [Python Validator](#Python-Validator)
-  * [Lighthouse](#Lighthouse)
 * [MANUAL TESTING](#MANUAL-TESTING)
   * [Testing User Stories](#Testing-User-Stories)
   * [Full Testing](#Full-Testing)
@@ -26,36 +22,11 @@ Each page has been inspected using google chrome developer tools & Firefox inspe
 
 ## AUTOMATED TESTING
 
-### W3C Validator
-
-[W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
-
-
-* [Index Page W3C HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffoundintranslationsodaci.herokuapp.com%2F) - Pass
-
-* [Login Page W3C HTML Validation](documentation/testing/login-user.png) - Pass
-* [Register Page W3C HTML Validation]
-* [Log out Page W3C HTML Validation](documentation/testing/admin-validation.png) - Pass
-
-* [All products Page W3C HTML Validation](documentation/testing/admin-validation.png) - Pass
-* [Add product Page W3C HTML Validation](documentation/testing/allthreads-validation.png) - Pass
-* [Edit product Page W3C HTML Validation](documentation/testing/allthreads-validation.png) - Pass
-* [Product details Page W3C HTML Validation](documentation/testing/allthreads-validation.png) - Pass
-
-* [The bag Page W3C HTML Validation](documentation/testing/allthreads-validation.png) - Pass
-
-* [The Checkout Page W3C HTML Validation](documentation/testing/allthreads-validation.png) - Pass
-* [Checkout Success Page W3C HTML Validation](documentation/testing/allthreads-validation.png) - Pass
-
-- - -
-
 ### JavaScript Validator
 
 [jshint](https://jshint.com/) was used to validate the JavaScript.
 
-* [dropdown.js](documentation/testing/dropdownjs-validation.png)
-* [form_validation.js](documentation/testing/form-validation-js.png)
-* [language_codes.js](documentation/testing/language-list-js.png)
+All JavaScript code was approved by jshint.
 
 - - -
 
@@ -63,77 +34,9 @@ Each page has been inspected using google chrome developer tools & Firefox inspe
 
 [PEP8](http://pep8online.com/)was used to validate the python files.
 
-* [translate.py](documentation/testing/translate-validation.png)
+* When validating my code, I ran the command in my terminal to view all the issues. Unfortunately, there are still a few unresolved issues that I couldn't resolve. Some of the preinstalled files had problems, mainly due to lines being too long and difficulties in making them PEP8 compliant by using appropriate formatting.
 
-- - -
-
-### Lighthouse
-
-I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
-
-### Desktop Results
-
-* Index Page
-  ![Index Page lighthouse testing desktop](documentation/lighthouse/index-lh-desk.png)
-
-* Login Page
-  ![Login Page Lighthouse testing desktop](documentation/lighthouse/login-lh-desk.png)
-  
-* Register Page
-  ![Sign Up Page Lighthouse testing desktop](documentation/lighthouse/signup-lh-desk.png)
-  
-* All Products Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* Add Product Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* Edit Product Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* Product Detail Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* The Shoppinng Bag Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* The Checkout Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* The Checkout Success Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-### Mobile Results
-
-* Index Page
-  ![Index Page lighthouse testing desktop](documentation/lighthouse/index-lh-desk.png)
-
-* Login Page
-  ![Login Page Lighthouse testing desktop](documentation/lighthouse/login-lh-desk.png)
-  
-* Register Page
-  ![Sign Up Page Lighthouse testing desktop](documentation/lighthouse/signup-lh-desk.png)
-  
-* All Products Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* Add Product Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* Edit Product Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* Product Detail Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* The Shoppinng Bag Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* The Checkout Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
-
-* The Checkout Success Page
-  ![All threads page lighthouse testing desktop](documentation/lighthouse/allthreads-lh-desk.png)
+However, I'm pleased to share that all the lines written entirely by me, and not inspired by the course walkthrough project, pass the validation without any issues.
 
 - - -
 
@@ -159,7 +62,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 | As a returning/registered user, I want to be able to have products saved in my shopping bag | Users shopping bag is saved in the shopping bag reached from the navbar | ![Order History](documentation/testing/login-user.png) |
 | As a returning/registered user, I want to be able to change my billing information | Users can change and add their information under their profile | ![Billing Information](documentation/testing/login-user.png) |
 | As a returning/registered user, I want to be able to like a product | Users can like a product on the product dettail | ![Like](documentation/testing/login-user.png) |
-| As a returning/registered user, I want to be able to comment a product | Users can comment a product on the product dettail | ![Comment](documentation/testing/login-user.png) |
+| As a returning/registered user, I want to be able to subscribe for a newsletter | Users can subscribe for a newsletter | ![Subscribe for a newsletter](documentation/testing/login-user.png) |
 
 `Admin User`
 
@@ -240,6 +143,10 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | Dropdown menu for Category | Shows menu | Click menu | Shows menu | Pass |
 | Textfield for Description | Activates textarea | Click field | Activates textarea | Pass |
 | Send button | Sends message to the admin panel | Click button | Sends message to the admin panel | Pass |
+| `Subscribe` |
+| Textfield for Username | Filled by default | Do nothing | Filled by default | Pass |
+| Textfield for Email | Filled by default | Do nothing | Filled by default | Pass |
+| Subsribe button | Send request to admin | Click button | Send request to admin | Pass |
 | `Product Management` |
 | Dropdown menu for Category | Shows menu | Click menu | Shows menu | Pass |
 | Input field for Sku | Activates text area | Click textfield | Activates text area | Pass |
@@ -266,8 +173,7 @@ Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | Textfield with buttons | Activates textfield and buttons increase or decrease number | Click button | Activates textfield and buttons increase or decrease number | Pass |
 | Keep Shopping button | Redirects users to all products page | Click button | Redirects users to all products page | Pass |
 | Add To Bag button | Adds product to bag | Click button | Adds product to bag | Pass |
-| Comment form (if user is logged in) | Make a comment | Click form | Make a comment | Pass |
-| Written comment (if user is author) | Edit and delete comment | Click edit or delete button | Edit and delete comment | Pass |
+| Subscribe form (if user is logged in) | Fill out a subsribe form | Click form | Fill out a subsribe form | Pass |
 | Edit and Delete link (if user is superuser) | Edit link opens product management page and delete link deletes product | Click link | Edit link opens product management page and delete link deletes product | Pass |
 | `Shopping Bag page` |
 | Decrease Amount button | Decrease amount of product choosen | Click button | Decrease amount of product choosen | Pass |
