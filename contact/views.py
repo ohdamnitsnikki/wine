@@ -31,7 +31,7 @@ def contact(request):
             entry.save()
 
         messages.success(request, f'Your message is sent to the admin!')
-        
+
     else:
         form = ContactForm(user=request.user)
 

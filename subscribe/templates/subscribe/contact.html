@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+      </div>
+
+      <!-- Subscribe form-->
+      <div class="col-md-4 col-sm-12 contact_form">
+          <h2>Subsribe to never miss any news!</h2>
+          <h4>Anxious about new wines getting out of stock before you tried them? Subscribe for our newsletter to never miss a good deal again! </h4>
+          <form method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+        
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+      <div class="col-md-4 col-sm-12">
+      </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    
+{% endblock %}
