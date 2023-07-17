@@ -8,6 +8,11 @@ def subscribe(request):
         if form.is_valid():
             # Save the form data in the admin
             form_data = form.cleaned_data
+            form.save()
+            return redirect('subscribe/subscribe.html')
+
+        messages.success(request, f'You are now a subscriber!')
+
     else:
         form = SubscriptionForm()
-    return render(request, 'subscribe.html', {'form': form})
+    return render(request, 'subscribe/subscribe.html', {'form': form})
