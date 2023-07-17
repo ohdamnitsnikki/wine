@@ -296,18 +296,15 @@ Throughout the development process, we iteratively performed these tests, fixing
 
 ### W3C Validator
 
-The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
+The [W3C validator](https://jigsaw.w3.org/css-validator/) was used to validate the HTML on all pages of the website. 
 
-* [Index Page HTML](docs/testing/w3c/w3cindex.png)
-* [Product Page HTML](docs/testing/w3c/w3cbooks.png)
-* [Description Page HTML](docs/testing/w3c/w3ccontact.png)
-* [Shopping Bag Page HTML](docs/testing/w3c/w3cthankyou.png)
-* [Checkout HTML](docs/testing/w3c/w3c404.png)
-* [My Profile Page HTML](docs/testing/w3c/w3ccss.png)
-* [Log in, out and register Page HTML](docs/testing/w3c/w3cindex.png)
-* [Subscribe Page HTML](docs/testing/w3c/w3cindex.png)
-* [Contact Us Page HTML](docs/testing/w3c/w3cindex.png)
-* [404 Page HTML](docs/testing/w3c/w3c404.png)
+When I started to validate my app, it was already deployed to Heroku. This meant that every time I corrected an error and pushed it to Heroku, it took a few minutes to rebuild the page and provide me with the modified link. When I had errors on parts that were consistent throughout the site, like the navbar, for example, it kept rendering the same errors if I didn't wait long enough.
+
+To speed up the process, I decided to validate the template codes rather than the deployed website's address.
+
+Little did I know that it would raise concerns about the fact that none of the files, besides the base.html, included the meta tags and so on. Additionally, it wasn't too happy about the way I rendered Python code into the template.
+
+To ensure that I had no errors, I went through all the error messages, even though a few of them were not actual errors for the application, and made sure to fix the ones related to semantics. I have now learned that `<li>` doesn't go inside the `<menu>` element, and `<small>` cannot contain a `<form>`.
 
 ### Solved Bugs
 
